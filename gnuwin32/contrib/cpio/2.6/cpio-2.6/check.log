@@ -1,0 +1,67 @@
+Making check in doc
+make[1]: Entering directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/doc'
+make[1]: Niets te doen voor `check'.
+make[1]: Leaving directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/doc'
+Making check in headers
+make[1]: Entering directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/headers'
+make[1]: Niets te doen voor `check'.
+make[1]: Leaving directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/headers'
+Making check in lib
+make[1]: Entering directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/lib'
+make  check-am
+make[2]: Entering directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/lib'
+make[2]: Niets te doen voor `check-am'.
+make[2]: Leaving directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/lib'
+make[1]: Leaving directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/lib'
+Making check in rmt
+make[1]: Entering directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/rmt'
+make[1]: Niets te doen voor `check'.
+make[1]: Leaving directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/rmt'
+Making check in src
+make[1]: Entering directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/src'
+make[1]: Niets te doen voor `check'.
+make[1]: Leaving directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/src'
+Making check in po
+make[1]: Entering directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/po'
+make[1]: Niets te doen voor `check'.
+make[1]: Leaving directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/po'
+Making check in tests
+make[1]: Entering directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/tests'
+make  genfile.exe
+make[2]: Entering directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/tests'
+make[2]: `genfile.exe' is up to date.
+make[2]: Leaving directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/tests'
+make  check-local
+make[2]: Entering directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/tests'
+/bin/sh ../../cpio-2.6-src/tests/testsuite
+## ------------------------ ##
+## GNU cpio 2.6 test suite. ##
+## ------------------------ ##
+  1: cpio version                                 FAILED (version.at:31)
+  2: basic functionality: copyin/copyout          ok
+
+## ------------- ##
+## Test results. ##
+## ------------- ##
+
+ERROR: All 2 tests were run,
+1 failed unexpectedly.
+## -------------------------- ##
+## testsuite.log was created. ##
+## -------------------------- ##
+
+Please send `testsuite.log' and all information you think might help:
+
+   To: <bug-cpio@gnu.org>
+   Subject: [GNU cpio 2.6] testsuite: 1 failed
+
+
+You may investigate any problem if you feel able to do so, in which
+case the test suite provides a good starting point.
+
+make[2]: [check-local] Fout 1 (genegeerd)
+make[2]: Leaving directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/tests'
+make[1]: Leaving directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6/tests'
+make[1]: Entering directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6'
+make[1]: Niets te doen voor `check-am'.
+make[1]: Leaving directory `/cygdrive/j/Archivers/cpio/2.6/cpio-2.6'

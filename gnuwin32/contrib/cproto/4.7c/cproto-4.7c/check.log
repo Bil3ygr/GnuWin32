@@ -1,0 +1,52 @@
+cd testing; make run_test
+make[1]: Entering directory `/cygdrive/k/Devel/cproto/4.7c/cproto-4.7c/testing'
+date >>run_test.out
+sh -c '(./run_test.sh 2>&1)' |tee -a run_test.out
+** Sun Apr 24 17:14:00 CES 2005
+** Case 01
+... ok
+** Case 02
+... ok
+** Case 03
+... ok
+** Case 04
+... ok
+** Case 05
+... ok
+** Case 06
+... ok
+** Case 07
+... ok
+** Case 08
+... ok
+** Case 09
+... ok
+** Case 10
+... ok
+** Case 11
+... ok
+** Case 12
+... ok
+** Case 13
+... ok
+** Case 14
+... ok
+** Case 16
+... ok
+** Case 17
+... ok
+** Case 18
+... ok
+** Case 19
+... ok
+** Case 20
+... ok
+** Case 21
+... ok
+** Case 22
+... ok
+** Case 23
+... ok
+** Case 24
+... ok
+make[1]: Leaving directory `/cygdrive/k/Devel/cproto/4.7c/cproto-4.7c/testing'

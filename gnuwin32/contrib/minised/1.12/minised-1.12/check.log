@@ -1,0 +1,76 @@
+cd tests; ./run ../minised
+Running test N ... Passed
+Running test address ... Passed
+Running test address2 ... Passed
+Running test arg-parsing ... Passed
+Running test arg-parsing2 ... Passed
+Running test char-class ... Passed
+Running test comment-curly ... Passed
+Running test d-all-inverted ... Passed
+Running test d-all ... Passed
+Running test d-inverted ... Passed
+Running test d ... Passed
+Running test empty-lhs ... Failed (as expected)
+Running test eof-inverted ... Passed
+Running test eof-newline ... Passed
+Running test eof ... Passed
+Running test escaped-ampersand ... Passed
+Running test graph-class ... Passed
+Running test group-star-+ ... Passed
+Running test group-star-g ... Passed
+Running test group-star ... Passed
+Running test group-star2 ... Passed
+Running test group-star3 ... Passed
+Running test group ... Passed
+Running test label ... Passed
+Running test last-re ... Passed
+Running test lhs-backref ... Passed
+Running test p-all-inverted ... Passed
+Running test p-all ... Passed
+Running test print-class ... Passed
+Running test punct-class ... Passed
+Running test range ... Passed
+Running test range2 ... Passed
+Running test range3 ... Passed
+Running test range4 ... Passed
+Running test range5 ... Passed
+Running test range6 ... Passed
+Running test rhs-escapes ... Passed
+Running test s-+ ... Passed
+Running test s-+2 ... Passed
+Running test s-ampersand ... Passed
+Running test s-newline ... Passed
+Running test s-nth ... Passed
+Running test s-star ... Passed
+Running test s ... Passed
+Running test scomplex ... Passed
+Running test sg ... Passed
+Running test single-escaped-char ... Passed
+Running test t2-initrdinit ... Passed
+Running test tac ... Passed
+Running test uniq ... Passed
+Running test w ... Failed !!!
+--- w.out	2006-09-13 19:12:52.000000000 +0200
++++ /cygdrive/l/TEMP/tmp.kqXTlG1972	2007-11-07 12:34:05.437500000 +0100
+@@ -1,3 +1 @@
+-no null
+-print to null
+-this is just filler
++cannot create /dev/null
+\ Geen witregel na einde bestand
+Running test w2 ... Failed !!!
+--- w2.out	2006-09-14 17:54:56.000000000 +0200
++++ /cygdrive/l/TEMP/tmp.kqXTlG1972	2007-11-07 12:34:05.703125000 +0100
+@@ -1,5 +1,5 @@
+-print this to stderr, but don't include it in the output
+ don't print this to stderr
+ print this too, but *do* include it
+ print this too, but *do* include it
+ this is just filler
++print this to stderr, but don't include it in the output
+Running test xbxcx ... Passed
+Running test y ... Passed
+
+	2 error(s) total!
+
+make: [check] Fout 1 (genegeerd)

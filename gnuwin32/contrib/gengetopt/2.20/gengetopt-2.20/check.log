@@ -1,0 +1,853 @@
+Making check in gl
+make[1]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/gl' wordt binnengegaan
+make  check-am
+make[2]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/gl' wordt binnengegaan
+make[2]: Er is niets te doen voor 'check-am'.
+make[2]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/gl' wordt verlaten
+make[1]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/gl' wordt verlaten
+Making check in src
+make[1]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/src' wordt binnengegaan
+Making check in includes
+make[2]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/src/includes' wordt binnengegaan
+make[2]: Er is niets te doen voor 'check'.
+make[2]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/src/includes' wordt verlaten
+Making check in skels
+make[2]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/src/skels' wordt binnengegaan
+make  check-am
+make[3]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/src/skels' wordt binnengegaan
+make[3]: Er is niets te doen voor 'check-am'.
+make[3]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/src/skels' wordt verlaten
+make[2]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/src/skels' wordt verlaten
+make[2]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/src' wordt binnengegaan
+make[2]: Er is niets te doen voor 'check-am'.
+make[2]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/src' wordt verlaten
+make[1]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/src' wordt verlaten
+Making check in doc
+make[1]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/doc' wordt binnengegaan
+touch cmdline1.h.texinfo
+cat ../../gengetopt-2.20-src/doc/sample1.ggo | sed -f ../../gengetopt-2.20-src/doc/input.sed > sample1.ggo.texinfo
+make  sample1.exe
+make[2]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/doc' wordt binnengegaan
+make[2]: 'sample1.exe' is bijgewerkt.
+make[2]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/doc' wordt verlaten
+./sample1.exe --help | sed -f ../../gengetopt-2.20-src/doc/input.sed > sample1.output.texinfo
+make  check-am
+make[2]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/doc' wordt binnengegaan
+rm -f test.out
+touch ../../gengetopt-2.20-src/doc/sample1.ggo ../../gengetopt-2.20-src/doc/sample2.ggo 
+make  sample1.exe sample2.exe
+make[3]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/doc' wordt binnengegaan
+../src/gengetopt.exe -i ../../gengetopt-2.20-src/doc/sample1.ggo -Fcmdline1 --long-help -u --show-required
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/doc -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT cmdline1.o -MD -MP -MF ".deps/cmdline1.Tpo" -c -o cmdline1.o cmdline1.c; \
+	then mv -f ".deps/cmdline1.Tpo" ".deps/cmdline1.Po"; else rm -f ".deps/cmdline1.Tpo"; exit 1; fi
+cmdline1.c: In function `cmdline_parser_internal':
+cmdline1.c:521: warning: passing arg 2 of `rpl_getopt_long' discards qualifiers from pointer target type
+/bin/sh ../libtool --tag=CXX --mode=link g++  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -fconserve-space -fno-rtti -D__STDC_LIMIT_MACROS    -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o sample1.exe  cmdline1.o main1.o ../gl/libgnu.la 
+g++ -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -fconserve-space -fno-rtti -D__STDC_LIMIT_MACROS -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o sample1.exe cmdline1.o main1.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+../src/gengetopt.exe --input=../../gengetopt-2.20-src/doc/sample2.ggo --func-name=my_cmdline_parser --file-name=cmdline2 --unamed-opts --no-handle-help --no-handle-version
+gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/doc -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DMY_CMDLINE_PARSER_PACKAGE=\"sample2\" -DMY_CMDLINE_PARSER_VERSION=\"2.0\" -c cmdline2.c
+In file included from cmdline2.c:22:
+cmdline2.h:52: warning: ISO C90 does not support `long long'
+cmdline2.c: In function `my_cmdline_parser_internal':
+cmdline2.c:469: warning: passing arg 2 of `rpl_getopt_long' discards qualifiers from pointer target type
+cmdline2.c:650: warning: ISO C90 does not support `long long'
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math     -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o sample2.exe  cmdline2.o main2.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o sample2.exe cmdline2.o main2.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+make[3]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/doc' wordt verlaten
+./sample1.exe -i 10 --flag-opt cmdline?.c >> test.out && \
+	./sample1.exe --help --int-opt -34 >> test.out && \
+	./sample2.exe -i 10 -l 20 >> test.out || \
+	./sample1.exe -F 2>> test.out
+./sample2.exe --version >> test.out 
+./sample2.exe --help >> test.out 
+expect no output from diff
+diff ../../gengetopt-2.20-src/doc/testdata test.out
+1,75c1,75
+< This one is from a C++ program
+< Try to launch me with some options
+< (type sample1 --help for the complete list)
+< For example: ./sample1 *.* --funct-opt
+< Here are the options you passed...
+< file: cmdline1.c
+< file: cmdline2.c
+< This is the integer you input: 10.
+< The flag option was given!
+< The flag is on.
+< Hello! Have a nice day! :-)
+< This one is from a C++ program
+< Try to launch me with some options
+< (type sample1 --help for the complete list)
+< For example: ./sample1 *.* --funct-opt
+< sample1 2.0
+< 
+< Usage: sample1 -iINT|--int-opt=INT [-h|--help] [--full-help] [-V|--version] 
+<          [-sfilename|--str-opt=filename] [-mINT|--my-opt=INT] [--flag-opt] 
+<          [-F|--funct-opt] [--long-opt=LONG] [--def-opt=STRING] 
+<          [--enum-opt=STRING] [-DINT|--dependant=INT]  [FILES]...
+< 
+<   -h, --help              Print help and exit
+<       --full-help         Print help, including hidden options, and exit
+<   -V, --version           Print version and exit
+<   -s, --str-opt=filename  A string option, for a filename
+< 
+< A brief text description before the other options.
+< 
+<   -m, --my-opt=INT        Another integer option, this time the description of 
+<                             the option should be "quite" long to require 
+<                             wrapping... possibly more than one wrapping :-) 
+<                             especially if I
+<                             require a line break
+<   -i, --int-opt=INT       A int option (mandatory)
+< 
+< more involved options:
+<   the following options
+<   are more complex
+< 
+<       --flag-opt          A flag option  (default=off)
+<   -F, --funct-opt         A function option
+< 
+< last option section:
+<       --long-opt=LONG     A long option
+<       --def-opt=STRING    A string option with default  (default=`Hello')
+<       --enum-opt=STRING   A string option with list of values  (possible 
+<                             values="foo", "bar", "hello", "bye" 
+<                             default=`hello')
+<   -D, --dependant=INT     option that depends on str-opt
+< 
+< An ending text.
+< Here is the version
+< sample2 2.0
+< This is a simple test for gengetopt
+< sample2 2.0
+< 
+< this is just a test program for gengetopt
+< 
+< Usage: sample2 [OPTIONS]... [FILES]...
+< 
+<   -h, --help                    Print help and exit
+<       --full-help               Print help, including hidden options, and exit
+<   -V, --version                 Print version and exit
+<   -s, --str-opt=STRING          A string option
+<   -i, --int-opt=INT             A int option
+<   -S, --short-opt=SHORT         A short option
+<   -l, --long-opt=LONG           A long option
+<   -f, --float-opt=FLOAT         A float option
+<   -d, --double-opt=DOUBLE       A double option
+<   -L, --long-double-opt=LONGDOUBLE
+<                                 A long double option
+<   -y, --long-long-opt=LONGLONG  A long long option
+<   -F, --func-opt                A function option
+<   -x, --flag-opt                A flag option  (default=off)
+---
+> This one is from a C++ program
+> Try to launch me with some options
+> (type sample1 --help for the complete list)
+> For example: ./sample1 *.* --funct-opt
+> Here are the options you passed...
+> file: cmdline1.c
+> file: cmdline2.c
+> This is the integer you input: 10.
+> The flag option was given!
+> The flag is on.
+> Hello! Have a nice day! :-)
+> This one is from a C++ program
+> Try to launch me with some options
+> (type sample1 --help for the complete list)
+> For example: ./sample1 *.* --funct-opt
+> sample1 2.0
+> 
+> Usage: sample1 -iINT|--int-opt=INT [-h|--help] [--full-help] [-V|--version] 
+>          [-sfilename|--str-opt=filename] [-mINT|--my-opt=INT] [--flag-opt] 
+>          [-F|--funct-opt] [--long-opt=LONG] [--def-opt=STRING] 
+>          [--enum-opt=STRING] [-DINT|--dependant=INT]  [FILES]...
+> 
+>   -h, --help              Print help and exit
+>       --full-help         Print help, including hidden options, and exit
+>   -V, --version           Print version and exit
+>   -s, --str-opt=filename  A string option, for a filename
+> 
+> A brief text description before the other options.
+> 
+>   -m, --my-opt=INT        Another integer option, this time the description of 
+>                             the option should be "quite" long to require 
+>                             wrapping... possibly more than one wrapping :-) 
+>                             especially if I
+>                             require a line break
+>   -i, --int-opt=INT       A int option (mandatory)
+> 
+> more involved options:
+>   the following options
+>   are more complex
+> 
+>       --flag-opt          A flag option  (default=off)
+>   -F, --funct-opt         A function option
+> 
+> last option section:
+>       --long-opt=LONG     A long option
+>       --def-opt=STRING    A string option with default  (default=`Hello')
+>       --enum-opt=STRING   A string option with list of values  (possible 
+>                             values="foo", "bar", "hello", "bye" 
+>                             default=`hello')
+>   -D, --dependant=INT     option that depends on str-opt
+> 
+> An ending text.
+> Here is the version
+> sample2 2.0
+> This is a simple test for gengetopt
+> sample2 2.0
+> 
+> this is just a test program for gengetopt
+> 
+> Usage: sample2 [OPTIONS]... [FILES]...
+> 
+>   -h, --help                    Print help and exit
+>       --full-help               Print help, including hidden options, and exit
+>   -V, --version                 Print version and exit
+>   -s, --str-opt=STRING          A string option
+>   -i, --int-opt=INT             A int option
+>   -S, --short-opt=SHORT         A short option
+>   -l, --long-opt=LONG           A long option
+>   -f, --float-opt=FLOAT         A float option
+>   -d, --double-opt=DOUBLE       A double option
+>   -L, --long-double-opt=LONGDOUBLE
+>                                 A long double option
+>   -y, --long-long-opt=LONGLONG  A long long option
+>   -F, --func-opt                A function option
+>   -x, --flag-opt                A flag option  (default=off)
+make[2]: [check-am] Fout 1 (genegeerd)
+make[2]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/doc' wordt verlaten
+make[1]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/doc' wordt verlaten
+Making check in tests
+make[1]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/tests' wordt binnengegaan
+make  check-am
+make[2]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/tests' wordt binnengegaan
+make  no_strings.exe no_multi_strings.exe no_unamed.exe no_optgiven.exe no_optgiven2.exe more_than_once.exe no_prog_name.exe canonize-names.exe default_values.exe default_cmdline.exe test_all_opts.exe test_groups.exe test_conf_parser.exe test_conf_parser_ov.exe test_conf_parser_ov2.exe test_conf_parser_ov3.exe test_conf_parser_file_save.exe test_multiple.exe test_sections.exe test_values.exe test_redef_help.exe test_multiple_parsers.exe
+make[3]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/tests' wordt binnengegaan
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT no_strings_cmd.o -MD -MP -MF ".deps/no_strings_cmd.Tpo" -c -o no_strings_cmd.o no_strings_cmd.c; \
+	then mv -f ".deps/no_strings_cmd.Tpo" ".deps/no_strings_cmd.Po"; else rm -f ".deps/no_strings_cmd.Tpo"; exit 1; fi
+no_strings_cmd.c: In function `no_strings_cmd_parser_internal':
+no_strings_cmd.c:244: warning: passing arg 2 of `rpl_getopt_long' discards qualifiers from pointer target type
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT no_strings.o -MD -MP -MF ".deps/no_strings.Tpo" -c -o no_strings.o ../../gengetopt-2.20-src/tests/no_strings.c; \
+	then mv -f ".deps/no_strings.Tpo" ".deps/no_strings.Po"; else rm -f ".deps/no_strings.Tpo"; exit 1; fi
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o no_strings.exe  no_strings_cmd.o no_strings.o ../gl/libgnu.la 
+mkdir .libs
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o no_strings.exe no_strings_cmd.o no_strings.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT no_multi_strings_cmd.o -MD -MP -MF ".deps/no_multi_strings_cmd.Tpo" -c -o no_multi_strings_cmd.o no_multi_strings_cmd.c; \
+	then mv -f ".deps/no_multi_strings_cmd.Tpo" ".deps/no_multi_strings_cmd.Po"; else rm -f ".deps/no_multi_strings_cmd.Tpo"; exit 1; fi
+no_multi_strings_cmd.c: In function `no_multi_strings_cmd_parser_internal':
+no_multi_strings_cmd.c:450: warning: passing arg 2 of `rpl_getopt_long' discards qualifiers from pointer target type
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT no_multi_strings.o -MD -MP -MF ".deps/no_multi_strings.Tpo" -c -o no_multi_strings.o ../../gengetopt-2.20-src/tests/no_multi_strings.c; \
+	then mv -f ".deps/no_multi_strings.Tpo" ".deps/no_multi_strings.Po"; else rm -f ".deps/no_multi_strings.Tpo"; exit 1; fi
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o no_multi_strings.exe  no_multi_strings_cmd.o no_multi_strings.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o no_multi_strings.exe no_multi_strings_cmd.o no_multi_strings.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT no_unamed_cmd.o -MD -MP -MF ".deps/no_unamed_cmd.Tpo" -c -o no_unamed_cmd.o no_unamed_cmd.c; \
+	then mv -f ".deps/no_unamed_cmd.Tpo" ".deps/no_unamed_cmd.Po"; else rm -f ".deps/no_unamed_cmd.Tpo"; exit 1; fi
+no_unamed_cmd.c: In function `no_unamed_cmd_parser_internal':
+no_unamed_cmd.c:240: warning: passing arg 2 of `rpl_getopt_long' discards qualifiers from pointer target type
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT no_unamed.o -MD -MP -MF ".deps/no_unamed.Tpo" -c -o no_unamed.o ../../gengetopt-2.20-src/tests/no_unamed.c; \
+	then mv -f ".deps/no_unamed.Tpo" ".deps/no_unamed.Po"; else rm -f ".deps/no_unamed.Tpo"; exit 1; fi
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o no_unamed.exe  no_unamed_cmd.o no_unamed.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o no_unamed.exe no_unamed_cmd.o no_unamed.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT no_optgiven_cmd.o -MD -MP -MF ".deps/no_optgiven_cmd.Tpo" -c -o no_optgiven_cmd.o no_optgiven_cmd.c; \
+	then mv -f ".deps/no_optgiven_cmd.Tpo" ".deps/no_optgiven_cmd.Po"; else rm -f ".deps/no_optgiven_cmd.Tpo"; exit 1; fi
+no_optgiven_cmd.c: In function `no_optgiven_cmd_parser_internal':
+no_optgiven_cmd.c:263: warning: passing arg 2 of `rpl_getopt_long' discards qualifiers from pointer target type
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT no_optgiven.o -MD -MP -MF ".deps/no_optgiven.Tpo" -c -o no_optgiven.o ../../gengetopt-2.20-src/tests/no_optgiven.c; \
+	then mv -f ".deps/no_optgiven.Tpo" ".deps/no_optgiven.Po"; else rm -f ".deps/no_optgiven.Tpo"; exit 1; fi
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o no_optgiven.exe  no_optgiven_cmd.o no_optgiven.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o no_optgiven.exe no_optgiven_cmd.o no_optgiven.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT no_optgiven2.o -MD -MP -MF ".deps/no_optgiven2.Tpo" -c -o no_optgiven2.o ../../gengetopt-2.20-src/tests/no_optgiven2.c; \
+	then mv -f ".deps/no_optgiven2.Tpo" ".deps/no_optgiven2.Po"; else rm -f ".deps/no_optgiven2.Tpo"; exit 1; fi
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o no_optgiven2.exe  no_optgiven_cmd.o no_optgiven2.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o no_optgiven2.exe no_optgiven_cmd.o no_optgiven2.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT more_than_once_cmd.o -MD -MP -MF ".deps/more_than_once_cmd.Tpo" -c -o more_than_once_cmd.o more_than_once_cmd.c; \
+	then mv -f ".deps/more_than_once_cmd.Tpo" ".deps/more_than_once_cmd.Po"; else rm -f ".deps/more_than_once_cmd.Tpo"; exit 1; fi
+more_than_once_cmd.c: In function `more_than_once_cmd_parser_internal':
+more_than_once_cmd.c:267: warning: passing arg 2 of `rpl_getopt_long' discards qualifiers from pointer target type
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT more_than_once.o -MD -MP -MF ".deps/more_than_once.Tpo" -c -o more_than_once.o ../../gengetopt-2.20-src/tests/more_than_once.c; \
+	then mv -f ".deps/more_than_once.Tpo" ".deps/more_than_once.Po"; else rm -f ".deps/more_than_once.Tpo"; exit 1; fi
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o more_than_once.exe  more_than_once_cmd.o more_than_once.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o more_than_once.exe more_than_once_cmd.o more_than_once.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_all_opts_cmd.o -MD -MP -MF ".deps/test_all_opts_cmd.Tpo" -c -o test_all_opts_cmd.o test_all_opts_cmd.c; \
+	then mv -f ".deps/test_all_opts_cmd.Tpo" ".deps/test_all_opts_cmd.Po"; else rm -f ".deps/test_all_opts_cmd.Tpo"; exit 1; fi
+In file included from test_all_opts_cmd.c:22:
+test_all_opts_cmd.h:52: warning: ISO C90 does not support `long long'
+test_all_opts_cmd.c: In function `test_all_opts_cmd_parser_internal':
+test_all_opts_cmd.c:646: warning: passing arg 2 of `rpl_getopt_long' discards qualifiers from pointer target type
+test_all_opts_cmd.c:811: warning: ISO C90 does not support `long long'
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT no_prog_name.o -MD -MP -MF ".deps/no_prog_name.Tpo" -c -o no_prog_name.o ../../gengetopt-2.20-src/tests/no_prog_name.c; \
+	then mv -f ".deps/no_prog_name.Tpo" ".deps/no_prog_name.Po"; else rm -f ".deps/no_prog_name.Tpo"; exit 1; fi
+In file included from ../../gengetopt-2.20-src/tests/no_prog_name.c:15:
+./test_all_opts_cmd.h:52: warning: ISO C90 does not support `long long'
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o no_prog_name.exe  test_all_opts_cmd.o no_prog_name.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o no_prog_name.exe test_all_opts_cmd.o no_prog_name.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT canonize-names-cmd.o -MD -MP -MF ".deps/canonize-names-cmd.Tpo" -c -o canonize-names-cmd.o canonize-names-cmd.c; \
+	then mv -f ".deps/canonize-names-cmd.Tpo" ".deps/canonize-names-cmd.Po"; else rm -f ".deps/canonize-names-cmd.Tpo"; exit 1; fi
+canonize-names-cmd.c: In function `canonize_names_cmd_parser_internal':
+canonize-names-cmd.c:234: warning: passing arg 2 of `rpl_getopt_long' discards qualifiers from pointer target type
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT canonize-names.o -MD -MP -MF ".deps/canonize-names.Tpo" -c -o canonize-names.o ../../gengetopt-2.20-src/tests/canonize-names.c; \
+	then mv -f ".deps/canonize-names.Tpo" ".deps/canonize-names.Po"; else rm -f ".deps/canonize-names.Tpo"; exit 1; fi
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o canonize-names.exe  canonize-names-cmd.o canonize-names.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o canonize-names.exe canonize-names-cmd.o canonize-names.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT default_values_cmd.o -MD -MP -MF ".deps/default_values_cmd.Tpo" -c -o default_values_cmd.o default_values_cmd.c; \
+	then mv -f ".deps/default_values_cmd.Tpo" ".deps/default_values_cmd.Po"; else rm -f ".deps/default_values_cmd.Tpo"; exit 1; fi
+default_values_cmd.c: In function `default_values_cmd_parser_internal':
+default_values_cmd.c:381: warning: passing arg 2 of `rpl_getopt_long' discards qualifiers from pointer target type
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT default_values.o -MD -MP -MF ".deps/default_values.Tpo" -c -o default_values.o ../../gengetopt-2.20-src/tests/default_values.c; \
+	then mv -f ".deps/default_values.Tpo" ".deps/default_values.Po"; else rm -f ".deps/default_values.Tpo"; exit 1; fi
+../../gengetopt-2.20-src/tests/default_values.c: In function `main':
+../../gengetopt-2.20-src/tests/default_values.c:28: warning: ISO C90 does not support the `%lf' printf format
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o default_values.exe  default_values_cmd.o default_values.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o default_values.exe default_values_cmd.o default_values.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT cmdline.o -MD -MP -MF ".deps/cmdline.Tpo" -c -o cmdline.o cmdline.c; \
+	then mv -f ".deps/cmdline.Tpo" ".deps/cmdline.Po"; else rm -f ".deps/cmdline.Tpo"; exit 1; fi
+cmdline.c: In function `cmdline_parser_internal':
+cmdline.c:258: warning: passing arg 2 of `rpl_getopt_long' discards qualifiers from pointer target type
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT default_cmdline.o -MD -MP -MF ".deps/default_cmdline.Tpo" -c -o default_cmdline.o ../../gengetopt-2.20-src/tests/default_cmdline.c; \
+	then mv -f ".deps/default_cmdline.Tpo" ".deps/default_cmdline.Po"; else rm -f ".deps/default_cmdline.Tpo"; exit 1; fi
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o default_cmdline.exe  cmdline.o default_cmdline.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o default_cmdline.exe cmdline.o default_cmdline.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_all_opts.o -MD -MP -MF ".deps/test_all_opts.Tpo" -c -o test_all_opts.o ../../gengetopt-2.20-src/tests/test_all_opts.c; \
+	then mv -f ".deps/test_all_opts.Tpo" ".deps/test_all_opts.Po"; else rm -f ".deps/test_all_opts.Tpo"; exit 1; fi
+In file included from ../../gengetopt-2.20-src/tests/test_all_opts.c:8:
+./test_all_opts_cmd.h:52: warning: ISO C90 does not support `long long'
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o test_all_opts.exe  test_all_opts_cmd.o test_all_opts.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o test_all_opts.exe test_all_opts_cmd.o test_all_opts.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_groups_cmd.o -MD -MP -MF ".deps/test_groups_cmd.Tpo" -c -o test_groups_cmd.o test_groups_cmd.c; \
+	then mv -f ".deps/test_groups_cmd.Tpo" ".deps/test_groups_cmd.Po"; else rm -f ".deps/test_groups_cmd.Tpo"; exit 1; fi
+test_groups_cmd.c: In function `test_groups_cmd_parser_internal':
+test_groups_cmd.c:573: warning: passing arg 2 of `rpl_getopt_long' discards qualifiers from pointer target type
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_groups.o -MD -MP -MF ".deps/test_groups.Tpo" -c -o test_groups.o ../../gengetopt-2.20-src/tests/test_groups.c; \
+	then mv -f ".deps/test_groups.Tpo" ".deps/test_groups.Po"; else rm -f ".deps/test_groups.Tpo"; exit 1; fi
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o test_groups.exe  test_groups_cmd.o test_groups.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o test_groups.exe test_groups_cmd.o test_groups.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_conf_parser_cmd.o -MD -MP -MF ".deps/test_conf_parser_cmd.Tpo" -c -o test_conf_parser_cmd.o test_conf_parser_cmd.c; \
+	then mv -f ".deps/test_conf_parser_cmd.Tpo" ".deps/test_conf_parser_cmd.Po"; else rm -f ".deps/test_conf_parser_cmd.Tpo"; exit 1; fi
+In file included from test_conf_parser_cmd.c:22:
+test_conf_parser_cmd.h:59: warning: ISO C90 does not support `long long'
+test_conf_parser_cmd.c: In function `test_conf_parser_cmd_parser_internal':
+test_conf_parser_cmd.c:917: warning: passing arg 2 of `rpl_getopt_long' discards qualifiers from pointer target type
+test_conf_parser_cmd.c:1139: warning: ISO C90 does not support `long long'
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_conf_parser.o -MD -MP -MF ".deps/test_conf_parser.Tpo" -c -o test_conf_parser.o ../../gengetopt-2.20-src/tests/test_conf_parser.c; \
+	then mv -f ".deps/test_conf_parser.Tpo" ".deps/test_conf_parser.Po"; else rm -f ".deps/test_conf_parser.Tpo"; exit 1; fi
+In file included from ../../gengetopt-2.20-src/tests/test_conf_parser.c:8:
+./test_conf_parser_cmd.h:59: warning: ISO C90 does not support `long long'
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o test_conf_parser.exe  test_conf_parser_cmd.o test_conf_parser.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o test_conf_parser.exe test_conf_parser_cmd.o test_conf_parser.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_conf_parser_ov.o -MD -MP -MF ".deps/test_conf_parser_ov.Tpo" -c -o test_conf_parser_ov.o ../../gengetopt-2.20-src/tests/test_conf_parser_ov.c; \
+	then mv -f ".deps/test_conf_parser_ov.Tpo" ".deps/test_conf_parser_ov.Po"; else rm -f ".deps/test_conf_parser_ov.Tpo"; exit 1; fi
+In file included from ../../gengetopt-2.20-src/tests/test_conf_parser_ov.c:10:
+./test_conf_parser_cmd.h:59: warning: ISO C90 does not support `long long'
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o test_conf_parser_ov.exe  test_conf_parser_cmd.o test_conf_parser_ov.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o test_conf_parser_ov.exe test_conf_parser_cmd.o test_conf_parser_ov.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_conf_parser_ov2.o -MD -MP -MF ".deps/test_conf_parser_ov2.Tpo" -c -o test_conf_parser_ov2.o test_conf_parser_ov2.c; \
+	then mv -f ".deps/test_conf_parser_ov2.Tpo" ".deps/test_conf_parser_ov2.Po"; else rm -f ".deps/test_conf_parser_ov2.Tpo"; exit 1; fi
+In file included from test_conf_parser_ov2.c:10:
+test_conf_parser_cmd.h:59: warning: ISO C90 does not support `long long'
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o test_conf_parser_ov2.exe  test_conf_parser_cmd.o test_conf_parser_ov2.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o test_conf_parser_ov2.exe test_conf_parser_cmd.o test_conf_parser_ov2.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_conf_parser_ov3.o -MD -MP -MF ".deps/test_conf_parser_ov3.Tpo" -c -o test_conf_parser_ov3.o test_conf_parser_ov3.c; \
+	then mv -f ".deps/test_conf_parser_ov3.Tpo" ".deps/test_conf_parser_ov3.Po"; else rm -f ".deps/test_conf_parser_ov3.Tpo"; exit 1; fi
+In file included from test_conf_parser_ov3.c:10:
+test_conf_parser_cmd.h:59: warning: ISO C90 does not support `long long'
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o test_conf_parser_ov3.exe  test_conf_parser_cmd.o test_conf_parser_ov3.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o test_conf_parser_ov3.exe test_conf_parser_cmd.o test_conf_parser_ov3.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_conf_parser_file_save.o -MD -MP -MF ".deps/test_conf_parser_file_save.Tpo" -c -o test_conf_parser_file_save.o ../../gengetopt-2.20-src/tests/test_conf_parser_file_save.c; \
+	then mv -f ".deps/test_conf_parser_file_save.Tpo" ".deps/test_conf_parser_file_save.Po"; else rm -f ".deps/test_conf_parser_file_save.Tpo"; exit 1; fi
+In file included from ../../gengetopt-2.20-src/tests/test_conf_parser_file_save.c:12:
+./test_conf_parser_cmd.h:59: warning: ISO C90 does not support `long long'
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o test_conf_parser_file_save.exe  test_conf_parser_cmd.o test_conf_parser_file_save.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o test_conf_parser_file_save.exe test_conf_parser_cmd.o test_conf_parser_file_save.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_multiple_cmd.o -MD -MP -MF ".deps/test_multiple_cmd.Tpo" -c -o test_multiple_cmd.o test_multiple_cmd.c; \
+	then mv -f ".deps/test_multiple_cmd.Tpo" ".deps/test_multiple_cmd.Po"; else rm -f ".deps/test_multiple_cmd.Tpo"; exit 1; fi
+test_multiple_cmd.c: In function `test_multiple_cmd_parser_internal':
+test_multiple_cmd.c:1024: warning: passing arg 2 of `rpl_getopt_long' discards qualifiers from pointer target type
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_multiple.o -MD -MP -MF ".deps/test_multiple.Tpo" -c -o test_multiple.o ../../gengetopt-2.20-src/tests/test_multiple.c; \
+	then mv -f ".deps/test_multiple.Tpo" ".deps/test_multiple.Po"; else rm -f ".deps/test_multiple.Tpo"; exit 1; fi
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o test_multiple.exe  test_multiple_cmd.o test_multiple.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o test_multiple.exe test_multiple_cmd.o test_multiple.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_sections_cmd.o -MD -MP -MF ".deps/test_sections_cmd.Tpo" -c -o test_sections_cmd.o test_sections_cmd.c; \
+	then mv -f ".deps/test_sections_cmd.Tpo" ".deps/test_sections_cmd.Po"; else rm -f ".deps/test_sections_cmd.Tpo"; exit 1; fi
+In file included from test_sections_cmd.c:22:
+test_sections_cmd.h:51: warning: ISO C90 does not support `long long'
+test_sections_cmd.c: In function `test_sections_cmd_parser_internal':
+test_sections_cmd.c:449: warning: passing arg 2 of `rpl_getopt_long' discards qualifiers from pointer target type
+test_sections_cmd.c:614: warning: ISO C90 does not support `long long'
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_sections.o -MD -MP -MF ".deps/test_sections.Tpo" -c -o test_sections.o ../../gengetopt-2.20-src/tests/test_sections.c; \
+	then mv -f ".deps/test_sections.Tpo" ".deps/test_sections.Po"; else rm -f ".deps/test_sections.Tpo"; exit 1; fi
+In file included from ../../gengetopt-2.20-src/tests/test_sections.c:8:
+./test_sections_cmd.h:51: warning: ISO C90 does not support `long long'
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o test_sections.exe  test_sections_cmd.o test_sections.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o test_sections.exe test_sections_cmd.o test_sections.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_values_cmd.o -MD -MP -MF ".deps/test_values_cmd.Tpo" -c -o test_values_cmd.o test_values_cmd.c; \
+	then mv -f ".deps/test_values_cmd.Tpo" ".deps/test_values_cmd.Po"; else rm -f ".deps/test_values_cmd.Tpo"; exit 1; fi
+test_values_cmd.c: In function `test_values_cmd_parser_internal':
+test_values_cmd.c:712: warning: passing arg 2 of `rpl_getopt_long' discards qualifiers from pointer target type
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_values.o -MD -MP -MF ".deps/test_values.Tpo" -c -o test_values.o ../../gengetopt-2.20-src/tests/test_values.c; \
+	then mv -f ".deps/test_values.Tpo" ".deps/test_values.Po"; else rm -f ".deps/test_values.Tpo"; exit 1; fi
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o test_values.exe  test_values_cmd.o test_values.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o test_values.exe test_values_cmd.o test_values.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_redef_help_cmd.o -MD -MP -MF ".deps/test_redef_help_cmd.Tpo" -c -o test_redef_help_cmd.o test_redef_help_cmd.c; \
+	then mv -f ".deps/test_redef_help_cmd.Tpo" ".deps/test_redef_help_cmd.Po"; else rm -f ".deps/test_redef_help_cmd.Tpo"; exit 1; fi
+test_redef_help_cmd.c: In function `test_redef_help_cmd_parser_internal':
+test_redef_help_cmd.c:227: warning: passing arg 2 of `rpl_getopt_long' discards qualifiers from pointer target type
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_redef_help.o -MD -MP -MF ".deps/test_redef_help.Tpo" -c -o test_redef_help.o ../../gengetopt-2.20-src/tests/test_redef_help.c; \
+	then mv -f ".deps/test_redef_help.Tpo" ".deps/test_redef_help.Po"; else rm -f ".deps/test_redef_help.Tpo"; exit 1; fi
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o test_redef_help.exe  test_redef_help_cmd.o test_redef_help.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o test_redef_help.exe test_redef_help_cmd.o test_redef_help.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_main_cmdline_cmd.o -MD -MP -MF ".deps/test_main_cmdline_cmd.Tpo" -c -o test_main_cmdline_cmd.o test_main_cmdline_cmd.c; \
+	then mv -f ".deps/test_main_cmdline_cmd.Tpo" ".deps/test_main_cmdline_cmd.Po"; else rm -f ".deps/test_main_cmdline_cmd.Tpo"; exit 1; fi
+test_main_cmdline_cmd.c: In function `test_main_cmdline_cmd_parser_internal':
+test_main_cmdline_cmd.c:495: warning: passing arg 2 of `rpl_getopt_long' discards qualifiers from pointer target type
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_first_cmdline_cmd.o -MD -MP -MF ".deps/test_first_cmdline_cmd.Tpo" -c -o test_first_cmdline_cmd.o test_first_cmdline_cmd.c; \
+	then mv -f ".deps/test_first_cmdline_cmd.Tpo" ".deps/test_first_cmdline_cmd.Po"; else rm -f ".deps/test_first_cmdline_cmd.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_second_cmdline_cmd.o -MD -MP -MF ".deps/test_second_cmdline_cmd.Tpo" -c -o test_second_cmdline_cmd.o test_second_cmdline_cmd.c; \
+	then mv -f ".deps/test_second_cmdline_cmd.Tpo" ".deps/test_second_cmdline_cmd.Po"; else rm -f ".deps/test_second_cmdline_cmd.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I../../gengetopt-2.20-src/tests -I..  -I../../gengetopt-2.20-src/gl -I../gl -ID:/Progra~1/GnuWin32/include      -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -MT test_multiple_parsers.o -MD -MP -MF ".deps/test_multiple_parsers.Tpo" -c -o test_multiple_parsers.o ../../gengetopt-2.20-src/tests/test_multiple_parsers.c; \
+	then mv -f ".deps/test_multiple_parsers.Tpo" ".deps/test_multiple_parsers.Po"; else rm -f ".deps/test_multiple_parsers.Tpo"; exit 1; fi
+/bin/sh ../libtool --tag=CC --mode=link gcc  -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math    -DHAVE_CONFIG_H  -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -o test_multiple_parsers.exe  test_main_cmdline_cmd.o test_first_cmdline_cmd.o test_second_cmdline_cmd.o test_multiple_parsers.o ../gl/libgnu.la 
+gcc -Wall -Wpointer-arith -Wstrict-prototypes -pedantic -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math -DHAVE_CONFIG_H -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -o test_multiple_parsers.exe test_main_cmdline_cmd.o test_first_cmdline_cmd.o test_second_cmdline_cmd.o test_multiple_parsers.o  -LD:/Progra~1/GnuWin32/lib ../gl/.libs/libgnu.a -lfl -lintl -lwsock32 -lole32 -luuid -lmsvcp60
+make[3]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/tests' wordt verlaten
+make  check-TESTS
+make[3]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/tests' wordt binnengegaan
+PASS: no_strings
+PASS: no_multi_strings
+PASS: no_unamed
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\no_optgiven.exe: '--foo' ('-i') option required
+the no_optgiven_cmd_parser2 returned successfully
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\no_optgiven2.exe: '--foo' ('-i') option required
+PASS: no_optgiven.sh
+foo option: 10
+bar option: hey
+arg: test1
+arg: test2
+arg: test3
+foo option: 10
+bar option: hey
+arg: test1
+arg: test2
+arg: test3
+PASS: more_than_once.sh
+PASS: canonize-names
+specified --required: foo
+additional: unamed
+PASS: no_prog_name
+foo-opt is given: 0
+bar-opt is given: 0
+Value of foo: 15000
+Value of bar: this is a default
+Value of foo-opt: 15000
+Value of bar-opt: this is a default
+Value of foofloat: 15000.000000
+Value of foodouble: 15000.000000
+Value of PI:     3.1415926536
+PASS: default_values
+Value of foo: 15000
+Value of bar: this is a default
+PASS: default_cmdline
+specified --opt-arg
+specified --opt-arg-short
+specified --opt-arg with argument bar
+specified --opt-arg-short with argument foobar
+specified --hidden: 10
+PASS: test_all_opts.sh
+specified --opt-arg
+specified --opt-arg-short
+PASS: test_all_opts_file_save.sh
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\test_groups.exe: 0 options of group grp1 were given. One is required.
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\test_groups.exe: 2 options of group grp1 were given. One is required.
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\test_groups.exe: 2 options of group my grp2 were given. At most one is required.
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\test_groups.exe: 0 options of group grp1 were given. One is required.
+optA given
+optA given
+optA arg: foo
+optAmul given 4 time(s)
+optAmul arg: foo
+optAmul arg: bar
+optAmul arg: (null)
+optAmul arg: aaa
+PASS: test_groups.sh
+value of required: this is a test
+value of string: another
+value of no-short_given: 1
+value of int: 100
+value of float: 3.140000
+value of multi-string_given: 8
+  value of multi-string: -1
+  value of multi-string: zero
+  value of multi-string: first
+  value of multi-string: second
+  value of multi-string: third
+  value of multi-string: fourth
+  value of multi-string: fifth
+  value of multi-string: sixth
+value of multi-string-def_given: 0
+default value of multi-string-def: this default
+value of opta: FOO
+noarg given 3 times
+noarg_noshort given 2 times
+opt-arg given: 1
+opt-arg value: not given
+saved configuration file test_conf_parser.save
+PASS: test_conf_parser.sh
+value of required: bar
+value of string: another
+value of no-short_given: 1
+value of int: 100
+value of float: 2.140000
+value of multi-string_given: 6
+  value of multi-string: first
+  value of multi-string: second
+  value of multi-string: third
+  value of multi-string: fourth
+  value of multi-string: fifth
+  value of multi-string: sixth
+value of multi-string-def_given: 0
+default value of multi-string-def: this default
+PASS: test_conf_parser_ov.sh
+value of required: bar
+value of string: another
+value of no-short_given: 1
+value of int: 100
+value of float: 2.140000
+PASS: test_conf_parser_ov2.sh
+value of required: bar
+value of string: another
+value of no-short_given: 1
+value of int: 100
+value of float: 2.140000
+value of multi-string_given: 7
+  value of multi-string: first
+  value of multi-string: second
+  value of multi-string: 
+  value of multi-string: third
+  value of multi-string: from another file
+  value of multi-string: 
+  value of multi-string: last?
+value of multi-string-def_given: 0
+default value of multi-string-def: this default
+PASS: test_conf_parser_ov3.sh
+test_conf_parser: option `--string' requires an argument
+PASS: test_conf_parser_err.sh
+test_conf_parser:../../gengetopt-2.20-src/tests/test_conf_err_string.conf:3: malformed string in configuration file
+test_conf_parser:../../gengetopt-2.20-src/tests/test_conf_err_string2.conf:3: unterminated string in configuration file
+PASS: test_conf_parser_err_string.sh
+value of required: this is a test
+value of string: another
+value of no-short_given: 1
+value of int: 100
+value of float: 3.140000
+value of multi-string_given: 4
+  value of multi-string: first
+  value of multi-string: second
+  value of multi-string: 
+  value of multi-string: third
+value of multi-string-def_given: 0
+default value of multi-string-def: this default
+value of opta: BAR
+noarg given 0 times
+noarg_noshort given 0 times
+opt-arg given: 0
+opt-arg value: not given
+PASS: test_conf_parser_grp.sh
+read configuration file: test_conf_parser.save
+value of required: this is a test
+value of string: another
+value of no-short_given: 1
+value of int: 100
+value of float: 3.140000
+value of multi-string_given: 8
+  value of multi-string: -1
+  value of multi-string: zero
+  value of multi-string: first
+  value of multi-string: second
+  value of multi-string: third
+  value of multi-string: fourth
+  value of multi-string: fifth
+  value of multi-string: sixth
+value of multi-string-def_given: 0
+default value of multi-string-def: this default
+value of opta: FOO
+noarg given 3 times
+noarg_noshort given 2 times
+opt-arg given: 1
+opt-arg value: not given
+PASS: test_conf_parser_save.sh
+passed string: foo
+passed string: bar
+passed string: hello
+passed string: world
+passed int: 100
+passed int: 200
+default float: 15000.000000
+passed no-short-opt: check
+passed no-short-opt: this out
+passed no-short-opt: first
+passed no-short-opt: second
+passed no-short-opt: third
+passed no-short-opt: fourth
+passed no-short-opt: fifth
+noarg given 3 times
+noarg_noshort given 2 times
+optarg_given 3 times
+optarg argument: no arg given
+optarg argument: first arg for optarg
+optarg argument: second arg for optarg
+optarg_noshort_given 2 times
+optarg_noshort argument: second arg for optarg
+optarg_noshort argument: no arg given
+PASS: test_multiple.sh
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\test_multiple.exe: option requires an argument -- s
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\test_multiple.exe: '--int' ('-i') option required
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\test_multiple.exe: '--limited' ('-L') option occurrences must be 3
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\test_multiple.exe: '--limited-interval' option occurrences must be between 1 and 3
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\test_multiple.exe: '--limited-open-right' option occurrences must be at least 3
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\test_multiple.exe: '--int' ('-i') option required
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\test_multiple.exe: '--limited-open-left' option occurrences must be at most 3
+PASS: test_multiple_err.sh
+test_sections 1.0
+
+Usage: test_sections [OPTIONS]... [FILES]...
+
+  -h, --help                   Print help and exit
+  -V, --version                Print version and exit
+  -s, --string=STRING          string option
+  -i, --int=INT                int option
+
+First section.  This "section" definition has no description, since the 
+description is in the definition itself, that is wrapped too:
+  -S, --short=SHORT            short option
+  -l, --long=LONG              long option
+  -f, --float=FLOAT            float option
+  -d, --double=DOUBLE          double option
+  -D, --longdouble=LONGDOUBLE  longdouble option
+
+Second section:
+  The following options belong to the second section
+  by the way this second section also has this neat description, and it is 
+  quite long so it should require some kind of line wrapping, but don't worry: 
+  gengetopt will wrap it for you! ;-)
+  -L, --longlong=LONGLONG      longlong option
+  -F, --flag                   flag option  (default=on)
+  -u, --function               function option
+
+Last section:
+      --no-short               no short option
+  -r, --required=STRING        required option (mandatory)
+PASS: test_sections.sh
+foo-opt is given: 0
+bar-opt is given: 0
+Value of foo: 15000
+Value of bar: this is a default
+Value of foo-opt: 15000
+Value of bar-opt: this is a default
+Value of foofloat: 15000.000000
+Value of foodouble: 15000.000000
+Value of PI:     3.1415926536
+foo-opt is given: 1
+bar-opt is given: 1
+Value of foo: 15000
+Value of bar: this is a default
+Value of foo-opt: 15000
+Value of bar-opt: this is a default
+Value of foofloat: 15000.000000
+Value of foodouble: 15000.000000
+Value of PI:     3.1415926536
+foo-opt is given: 1
+bar-opt is given: 1
+Value of foo: 15000
+Value of bar: this is a default
+Value of foo-opt: 15
+Value of bar-opt: hi
+Value of foofloat: 15000.000000
+Value of foodouble: 15000.000000
+Value of PI:     3.1415926536
+foo-opt is given: 1
+bar-opt is given: 1
+Value of foo: 15000
+Value of bar: this is a default
+Value of foo-opt: 15000
+Value of bar-opt: this is a default
+Value of foofloat: 15000.000000
+Value of foodouble: 15000.000000
+Value of PI:     3.1415926536
+foo-opt is given: 1
+bar-opt is given: 1
+Value of foo: 15000
+Value of bar: this is a default
+Value of foo-opt: 15
+Value of bar-opt: hi
+Value of foofloat: 15000.000000
+Value of foodouble: 15000.000000
+Value of PI:     3.1415926536
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\default_values.exe: invalid numeric value: a5
+PASS: test_default_values.sh
+specified --string-values with argument foobar
+specified --string-values with (original) argument foob
+(un)specified --string-values-def with argument bar
+specified --string-values-def-argopt with argument foobar
+specified --string-values-no-short with argument bar
+specified --multistring-values with argument foo
+specified --multistring-values with (original) argument foo
+specified --multistring-values with argument bar
+specified --multistring-values with (original) argument b
+specified --multistring-values with argument bar
+specified --multistring-values with (original) argument bar
+specified --multistring-values with argument foo
+specified --multistring-values with (original) argument foo
+specified --multistring-values-def with argument bar
+specified --multistring-values-def with (original) argument bar
+specified --multistring-values-def with argument foo
+specified --multistring-values-def with (original) argument (null)
+specified --multistring-values-no-short with argument foo
+specified --multistring-values-no-short with argument foo
+specified --multistring-values-no-short with argument bar
+specified --multistring-values-no-short with argument bar
+specified --multistring-values-no-short with argument bar
+specified --multistring-values-no-short with argument foo
+PASS: test_values.sh
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\test_values.exe: ambiguous argument, "fo", for option `--string-values' (`-s')
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\test_values.exe: invalid argument, "fooa", for option `--multistring-values' (`-S')
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\test_values.exe: invalid argument, "fooa", for option `--string-values-no-short'
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\test_values.exe: invalid argument, "fooa", for option `--multistring-values-no-short'
+PASS: test_values_err.sh
+j:\Devel\gengetopt\2.20\gengetopt-2.20\tests\test_all_opts.exe: '--dependant' ('-A') option depends on option 'opt-arg'
+specified --opt-arg with argument bar
+PASS: test_dep.sh
+second cmdline: -a20 -b10 --my-multi=a,b,c,d,e,f
+  --option-a: 20
+  --option-b: 10
+  --my-multi: a
+  --my-multi: b
+  --my-multi: c
+  --my-multi: d
+  --my-multi: e
+  --my-multi: f
+second cmdline: --my-multi g
+  --my-multi: g
+first cmdline: -M400 -a10 --multi 100,200,300
+  --option-a: 10
+  --multi: 400
+  --multi: 100
+  --multi: 200
+  --multi: 300
+first cmdline: -M500 -M600
+  --multi: 500
+  --multi: 600
+PASS: test_multiple_parsers.sh
+test_all_opts 1.0
+
+This is just a gengetopt's test file
+
+Usage: test_all_opts [OPTIONS]...
+
+This is just a test file
+
+to test all possible
+command line type options.
+
+In ggo files comments start with # and end at EOL
+
+
+  -h, --help                    Print help and exit
+      --full-help               Print help, including hidden options, and exit
+  -V, --version                 Print version and exit
+
+  -s, --string=STRING            string option
+  -i, --int=INT                 int option
+  -S, --short=SHORT             short option
+  -l, --long=LONG               long option
+  -f, --float=FLOAT             float option
+  -d, --double=DOUBLE           double option
+  -D, --longdouble=LONGDOUBLE   longdouble option
+  -L, --longlong=LONGLONG       longlong option
+  -F, --flag                    flag option  (default=on)
+  -u, --function                function option
+      --no-short                no short option
+      --opt-arg[=STRING]        option with optional arg
+  -o, --opt-arg-short[=STRING]  option with optional arg (short)
+  -r, --required=STRING         required option
+
+Before the dependant option there is a hidden option, so it shouldn't be 
+visible in the output of --help, but it will be visible in the output of 
+--full-help.
+
+  -A, --dependant=STRING        option that depends on opt-arg
+
+This is a text line just to write something in the output
+
+Notice that a text line can contain line breaks, just like this very text, and 
+that, just like all the other texts, it is wrapped by gengetopt automatically 
+if it's too long.
+
+Moreover, text can be specified more than once in the input file.
+
+      --very-very-long-option=STRING
+                                the name of this option is long enough to make 
+                                  this description begin on a new line
+  -y, --assume-multimeth-virtual
+                                the name of this option is just as long as the 
+                                  maximum allowed, so this description begin on 
+                                  a new line
+      --file-save=STRING        save the passed options into a file
+
+A text after all options.
+test_all_opts 1.0
+test_values 1.0
+
+This is just a test file
+to test options
+with the list of acceptable values
+
+Usage: test_values [OPTIONS]...
+
+  -h, --help                    Print help and exit
+  -V, --version                 Print version and exit
+  -s, --string-values=STRING    string option with values  (possible 
+                                  values="foo", "foa", "bar", "foobar", 
+                                  "barfoo")
+      --string-values-def=STRING
+                                string option with values and default  
+                                  (possible values="foo", "bar", 
+                                  "foobar", "barfoo" default=`bar')
+      --string-values-def-argopt[=STRING]
+                                string option with values and default and 
+                                  optional argument  (possible values="foo", 
+                                  "bar", "foobar", "barfoo" 
+                                  default=`foobar')
+      --string-values-no-short=STRING
+                                string option with values no short  (possible 
+                                  values="foo", "bar", "foobar", 
+                                  "barfoo")
+  -S, --multistring-values=STRING
+                                multiple string option with values  (possible 
+                                  values="foo", "bar")
+      --multistring-values-def[=STRING]
+                                multiple string option with values and default  
+                                  (possible values="foo", "bar" 
+                                  default=`foo')
+      --multistring-values-no-short=BAR
+                                multiple string option with values no-short  
+                                  (possible values="foo", "bar")
+
+ Group: group1
+      --string-values-group=FOO group string option with values and default  
+                                  (possible values="foo", "bar", 
+                                  "foobar", "barfoo" default=`bar')
+PASS: test_show_help.sh
+diff wrong_dep.err.out ../../gengetopt-2.20-src/tests/wrong_dep.err
+diff wrong_flag.err.out ../../gengetopt-2.20-src/tests/wrong_flag.err
+diff wrong_flag2.err.out ../../gengetopt-2.20-src/tests/wrong_flag2.err
+diff wrong_group.err.out ../../gengetopt-2.20-src/tests/wrong_group.err
+diff wrong_group2.err.out ../../gengetopt-2.20-src/tests/wrong_group2.err
+diff wrong_type.err.out ../../gengetopt-2.20-src/tests/wrong_type.err
+PASS: test_err.sh
+===================
+All 30 tests passed
+===================
+make[3]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/tests' wordt verlaten
+make[2]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/tests' wordt verlaten
+make[1]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20/tests' wordt verlaten
+make[1]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20' wordt binnengegaan
+make[1]: Er is niets te doen voor 'check-am'.
+make[1]: Map '/cygdrive/j/Devel/gengetopt/2.20/gengetopt-2.20' wordt verlaten

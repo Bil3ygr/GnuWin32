@@ -1,0 +1,27 @@
+Last Updated December 26, 2017
+-
+
+OpenSSL binaries updated to OpenSSL 1.0.2n (2017-12-07)
+Mozilla SSL CA Root Certificates - cacert.pem (2017-09-20)
+Fix bug #34 'info.exe is a self spawning process on windows'
+Fix bug #35 'Update fails if delayed expansion is enabled.'
+
+
+Previous updates are also included:
+-
+
+Fixed download bat to try 'master' sf mirror first
+Switched from OpenSSL 1.0.0 to 1.0.2
+Wget v1.12.1 update is now the default (wget-1.12.exe -> wget.exe)
+Fixed bug in install.bat when installing from one drive to another
+Updated gnuwin32 package lists
+Installers now work with pathnames that have parentheses (bug 3043943)
+Windows Defender compatibility issues fixed (bug 3031857)
+Wget 1.12.1 devel update. Built from mainline version 03-04-10
+Findhash utility
+Changes to installation to accomodate these updated files
+*dehtml 1.5 is not downloaded by GetGnuWin32.
+
+
+-
+Jay Satiro <raysatiro@users.sourceforge.net>

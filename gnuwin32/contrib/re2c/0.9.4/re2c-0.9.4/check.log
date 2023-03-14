@@ -1,0 +1,35 @@
+make  check-am
+make[1]: Entering directory `/cygdrive/k/Devel/re2c/0.9.4/re2c-0.9.4'
+make  check-TESTS
+make[2]: Entering directory `/cygdrive/k/Devel/re2c/0.9.4/re2c-0.9.4'
+mkdir: kan map `./test' niet aanmaken: File exists
+../re2c-0.9.4-src/test/c.re
+Passed.
+../re2c-0.9.4-src/test/cmmap.re
+Passed.
+../re2c-0.9.4-src/test/cnokw.re
+Passed.
+../re2c-0.9.4-src/test/cunroll.re
+Passed.
+../re2c-0.9.4-src/test/input1.re
+Passed.
+../re2c-0.9.4-src/test/input2.re
+Passed.
+../re2c-0.9.4-src/test/input3.re
+Passed.
+../re2c-0.9.4-src/test/modula.re
+Passed.
+../re2c-0.9.4-src/test/repeater.re
+Passed.
+../re2c-0.9.4-src/test/sample.re
+Passed.
+../re2c-0.9.4-src/test/scanner.re
+Passed.
+../re2c-0.9.4-src/test/simple.re
+Passed.
+PASS: run_tests
+==================
+All 1 tests passed
+==================
+make[2]: Leaving directory `/cygdrive/k/Devel/re2c/0.9.4/re2c-0.9.4'
+make[1]: Leaving directory `/cygdrive/k/Devel/re2c/0.9.4/re2c-0.9.4'

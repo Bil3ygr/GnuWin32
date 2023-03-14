@@ -1,0 +1,535 @@
+cd awka; make
+make[1]: Entering directory `/cygdrive/j/Lang/awka/0.7.5/awka-0.7.5/awka'
+make[1]: Niets te doen voor `all'.
+make[1]: Leaving directory `/cygdrive/j/Lang/awka/0.7.5/awka-0.7.5/awka'
+cd lib; make
+make[1]: Entering directory `/cygdrive/j/Lang/awka/0.7.5/awka-0.7.5/lib'
+make[1]: Niets te doen voor `all'.
+make[1]: Leaving directory `/cygdrive/j/Lang/awka/0.7.5/awka-0.7.5/lib'
+cd test; make -k
+make[1]: Entering directory `/cygdrive/j/Lang/awka/0.7.5/awka-0.7.5/test'
+Any output from "cmp" is bad news, although some differences
+in floating point values are probably benign -- in particular,
+some systems may omit a leading zero and the floating point
+precision may lead to slightly different output in a few cases.
+diff -a  ../../awka-0.7.5-src/test/swaplns.ok _swaplns && rm -f _swaplns
+{ diff -a  ../../awka-0.7.5-src/test/out1.ok out1 && diff -a  ../../awka-0.7.5-src/test/out2.ok out2 && \
+diff -a  ../../awka-0.7.5-src/test/out3.ok out3 && rm -f out1 out2 out3; } || \
+{ { test -d /dev/fd || test -d /proc/self/fd; } && \
+echo IT IS OK THAT THIS TEST FAILED; }
+diff -a  ../../awka-0.7.5-src/test/a_cat.ok _a_cat && rm -f _a_cat
+diff -a  ../../awka-0.7.5-src/test/pdb_find_salt.ok _pdb_find_salt && rm -f _pdb_find_salt
+diff -a  ../../awka-0.7.5-src/test/argarray.ok _argarray && rm -f _argarray
+3c3
+< 	 ./xx
+---
+> 	 j:\Lang\awka\0.7.5\awka-0.7.5\test\xx
+make[1]: [argarray] Fout 1 (genegeerd)
+diff -a  ../../awka-0.7.5-src/test/longwrds.ok _longwrds && rm -f _longwrds
+diff -a  ../../awka-0.7.5-src/test/getline.ok _getline && rm -f _getline
+diff -a  ../../awka-0.7.5-src/test/getline2.ok _getline2 && rm -f _getline2
+2d1
+< file 2
+4d2
+< file 2
+6d3
+< file 2
+8d4
+< file 2
+10d5
+< file 2
+12d6
+< file 2
+14d7
+< file 2
+16d8
+< file 2
+18d9
+< file 2
+20d10
+< file 2
+22d11
+< file 2
+24d12
+< file 2
+26d13
+< file 2
+28c15,28
+< file 2
+---
+> file 1
+> file 1
+> file 1
+> file 1
+> file 1
+> file 1
+> file 1
+> file 1
+> file 1
+> file 1
+> file 1
+> file 1
+> file 1
+> file 1
+make[1]: [getline2] Fout 1 (genegeerd)
+diff -a  ../../awka-0.7.5-src/test/fstabplus.ok _fstabplus && rm -f _fstabplus
+diff -a  ../../awka-0.7.5-src/test/compare.ok _compare && rm -f _compare
+diff -a  ../../awka-0.7.5-src/test/arrayref.ok _arrayref && rm -f _arrayref
+diff -a  ../../awka-0.7.5-src/test/rs.ok _rs && rm -f _rs
+diff -a  ../../awka-0.7.5-src/test/fsrs.ok _fsrs && rm -f _fsrs
+diff -a  ../../awka-0.7.5-src/test/rand.ok _rand && rm -f _rand
+diff -a  ../../awka-0.7.5-src/test/fun.ok _fun && rm -f _fun
+diff -a  ../../awka-0.7.5-src/test/dubois.ok _dubois && rm -f _dubois
+diff -a  ../../awka-0.7.5-src/test/fsbs.ok _fsbs && rm -f _fsbs
+diff -a  ../../awka-0.7.5-src/test/negexp.ok _negexp && rm -f _negexp
+diff -a  ../../awka-0.7.5-src/test/asgext.ok _asgext && rm -f _asgext
+diff -a  ../../awka-0.7.5-src/test/anchgsub.ok _anchgsub && rm -f _anchgsub
+diff -a  ../../awka-0.7.5-src/test/splitargv.ok _splitargv && rm -f _splitargv
+diff -a  ../../awka-0.7.5-src/test/nfset.ok _nfset && rm -f _nfset
+diff -a  ../../awka-0.7.5-src/test/reparse.ok _reparse && rm -f _reparse
+diff -a  ../../awka-0.7.5-src/test/bil.ok _bil && rm -f _bil
+diff -a  ../../awka-0.7.5-src/test/bil2.ok _bil2 && rm -f _bil2
+1,3d0
+< function hello() {
+<   print "hello"
+< }
+make[1]: [bil2] Fout 1 (genegeerd)
+diff -a  ../../awka-0.7.5-src/test/convfmt.ok _convfmt && rm -f _convfmt
+diff -a  ../../awka-0.7.5-src/test/litoct.ok _litoct && rm -f _litoct
+diff -a  ../../awka-0.7.5-src/test/resplit.ok _resplit && rm -f _resplit
+diff -a  ../../awka-0.7.5-src/test/rswhite.ok _rswhite && rm -f _rswhite
+diff -a  ../../awka-0.7.5-src/test/intprec.ok _intprec && rm -f _intprec
+diff -a  ../../awka-0.7.5-src/test/childin.ok _childin && rm -f _childin
+diff -a  ../../awka-0.7.5-src/test/splitrem.ok _splitrem && rm -f _splitrem
+diff -a  ../../awka-0.7.5-src/test/aloop.ok _aloop && rm -f _aloop
+diff -a  ../../awka-0.7.5-src/test/numsubstr.ok _numsubstr && rm -f _numsubstr
+diff -a  ../../awka-0.7.5-src/test/pcntplus.ok _pcntplus && rm -f _pcntplus
+diff -a  ../../awka-0.7.5-src/test/prmreuse.ok _prmreuse && rm -f _prmreuse
+diff -a  ../../awka-0.7.5-src/test/math.ok _math && rm -f _math
+diff -a  ../../awka-0.7.5-src/test/fldchg.ok _fldchg && rm -f _fldchg
+diff -a  ../../awka-0.7.5-src/test/fldchgnf.ok _fldchgnf && rm -f _fldchgnf
+diff -a  ../../awka-0.7.5-src/test/reindops.ok _reindops && rm -f _reindops
+diff -a  ../../awka-0.7.5-src/test/range.ok _range && rm -f _range
+diff -a  ../../awka-0.7.5-src/test/sprintfc.ok _sprintfc && rm -f _sprintfc
+diff -a  ../../awka-0.7.5-src/test/backgsub.ok _backgsub && rm -f _backgsub
+diff -a  ../../awka-0.7.5-src/test/tweakfld.ok _tweakfld && rm -f _tweakfld
+diff -a  ../../awka-0.7.5-src/test/clsflnam.ok _clsflnam && rm -f _clsflnam
+diff -a  ../../awka-0.7.5-src/test/mmap8k.in _mmap8k && rm -f _mmap8k
+diff -a  ../../awka-0.7.5-src/test/conflict.ok _conflict && rm -f _conflict
+diff -a  ../../awka-0.7.5-src/test/amsal.ok _amsal && rm -f _amsal
+diff -a  ../../awka-0.7.5-src/test/amsal2.ok _amsal2 && rm -f _amsal2
+diff -a  ../../awka-0.7.5-src/test/amsal3.ok _amsal3 && rm -f _amsal3
+diff -a  ../../awka-0.7.5-src/test/amsal4.ok _amsal4 && rm -f _amsal4
+diff -a  ../../awka-0.7.5-src/test/amsal5.ok _amsal5 && rm -f _amsal5
+diff -a  ../../awka-0.7.5-src/test/dynlj.ok _dynlj && rm -f _dynlj
+diff -a  ../../awka-0.7.5-src/test/substr.ok _substr && rm -f _substr
+diff -a  ../../awka-0.7.5-src/test/eofsplit.ok _eofsplit && rm -f _eofsplit
+diff -a  ../../awka-0.7.5-src/test/prt1eval.ok _prt1eval && rm -f _prt1eval
+diff -a  ../../awka-0.7.5-src/test/prtoeval.ok _prtoeval && rm -f _prtoeval
+diff -a  ../../awka-0.7.5-src/test/retest.ok _retest && rm -f _retest
+diff -a  ../../awka-0.7.5-src/test/gsubtest.ok _gsubtest && rm -f _gsubtest
+diff -a  ../../awka-0.7.5-src/test/splitwht.ok _splitwht && rm -f _splitwht
+diff -a  ../../awka-0.7.5-src/test/back89.ok _back89 && rm -f _back89
+diff -a  ../../awka-0.7.5-src/test/tradanch.ok _tradanch && rm -f _tradanch
+diff -a  ../../awka-0.7.5-src/test/nlfldsep.ok _nlfldsep && rm -f _nlfldsep
+diff -a  ../../awka-0.7.5-src/test/splitvar.ok _splitvar && rm -f _splitvar
+diff -a  ../../awka-0.7.5-src/test/intest.ok _intest && rm -f _intest
+diff -a  ../../awka-0.7.5-src/test/nors.ok _nors && rm -f _nors
+diff -a  ../../awka-0.7.5-src/test/hh.ok _hh && rm -f _hh
+diff -a  ../../awka-0.7.5-src/test/eiso.ok _eiso && rm -f _eiso
+diff -a  ../../awka-0.7.5-src/test/eiso2.ok _eiso2 && rm -f _eiso2
+diff -a  ../../awka-0.7.5-src/test/eiso3.ok _eiso3 && rm -f _eiso3
+diff -a  ../../awka-0.7.5-src/test/eiso4.ok _eiso4 && rm -f _eiso4
+diff -a  ../../awka-0.7.5-src/test/fnarydel.ok _fnarydel && rm -f _fnarydel
+diff -a  ../../awka-0.7.5-src/test/funstack.ok _funstack && rm -f _funstack
+diff -a  ../../awka-0.7.5-src/test/clobber.ok seq && diff -a  ../../awka-0.7.5-src/test/clobber.ok _clobber && rm -f _clobber
+diff -a  ../../awka-0.7.5-src/test/delarprm.ok _delarprm && rm -f _delarprm
+diff -a  ../../awka-0.7.5-src/test/prdupval.ok _prdupval && rm -f _prdupval
+diff -a  ../../awka-0.7.5-src/test/nfldstr.ok _nfldstr && rm -f _nfldstr
+diff -a  ../../awka-0.7.5-src/test/foronsplit.ok _foronsplit && rm -f _foronsplit
+diff -a  ../../awka-0.7.5-src/test/divide.ok _divide && rm -f _divide
+diff -a  ../../awka-0.7.5-src/test/parsecsv.ok _parsecsv && rm -f _parsecsv
+diff -a  ../../awka-0.7.5-src/test/arraycat.ok _arraycat && rm -f _arraycat
+diff -a  ../../awka-0.7.5-src/test/argtest2.ok _argtest2 && rm -f _argtest2
+diff -a  ../../awka-0.7.5-src/test/fw.ok _fw && rm -f _fw
+diff -a  ../../awka-0.7.5-src/test/rsre.ok _rsre && rm -f _rsre
+diff -a  ../../awka-0.7.5-src/test/unbuf.ok _unbuf && rm -f _unbuf
+diff -a  ../../awka-0.7.5-src/test/bslash.ok _bslash && rm -f _bslash
+diff -a  ../../awka-0.7.5-src/test/print.ok _print && rm -f _print
+2c2
+< abcdef
+---
+> abcdef
+make[1]: [print] Fout 1 (genegeerd)
+diff -a  ../../awka-0.7.5-src/test/cox.ok _cox && rm -f _cox
+1,12d0
+< CHK NAME.CHK1
+< CHK LEVELID.1
+< CHK LEVEL.ONE
+< CHK STATUS.
+< CHK USER.
+< CHK SIGNUSER.
+< CHK SIGNUCLASS.
+< CHK DYNAMIC.
+< CHK CHKDESC.
+< CHK AUTOPROMOTE.
+< CHK DESC.
+< CHK CHKDATE.
+make[1]: [cox] Fout 1 (genegeerd)
+diff -a  ../../awka-0.7.5-src/test/gensub.ok _gensub && rm -f _gensub
+diff -a  ../../awka-0.7.5-src/test/zeroflag.ok _zeroflag && rm -f _zeroflag
+diff -a  ../../awka-0.7.5-src/test/getnr2tm.ok _getnr2tm && rm -f _getnr2tm
+diff -a  ../../awka-0.7.5-src/test/getnr2tb.ok _getnr2tb && rm -f _getnr2tb
+diff -a  ../../awka-0.7.5-src/test/numindex.ok _numindex && rm -f _numindex
+diff -a  ../../awka-0.7.5-src/test/subslash.ok _subslash && rm -f _subslash
+diff -a  ../../awka-0.7.5-src/test/opasnslf.ok _opasnslf && rm -f _opasnslf
+diff -a  ../../awka-0.7.5-src/test/opasnidx.ok _opasnidx && rm -f _opasnidx
+diff -a  ../../awka-0.7.5-src/test/arynocls.ok _arynocls && rm -f _arynocls
+diff -a  ../../awka-0.7.5-src/test/getlnbuf.ok _getlnbuf && diff -a  ../../awka-0.7.5-src/test/getlnbuf.ok _2getlnbuf && rm -f _getlnbuf _2getlnbuf
+diff -a  ../../awka-0.7.5-src/test/arysubnm.ok _arysubnm && rm -f _arysubnm
+diff -a  ../../awka-0.7.5-src/test/nlstrina.ok _nlstrina && rm -f _nlstrina
+error reading from file "nextfile.in2"
+make[1]: [nextfile] Fout 1 (genegeerd)
+diff -a  ../../awka-0.7.5-src/test/nextfile.ok _nextfile && rm -f _nextfile
+2,3d1
+< 2 Rec 1
+< 3 Rec 1
+make[1]: [nextfile] Fout 1 (genegeerd)
+diff -a  ../../awka-0.7.5-src/test/next.ok _next && rm -f _next
+diff -a  ../../awka-0.7.5-src/test/rsnul1nl.ok _rsnul1nl && rm -f _rsnul1nl
+diff -a  ../../awka-0.7.5-src/test/poundbang.ok _`basename poundbang` && rm -f _`basename poundbang`
+g:\mingw\3.3.1\bin\..\lib\gcc-lib\mingw32\3.3.1\..\..\..\..\mingw32\bin\ld.exe: cannot open output file xx.exe: Permission denied
+../../awka-0.7.5-src/test/fflush.sh: line 35: ./xx: No such file or directory
+diff -a  ../../awka-0.7.5-src/test/fflush.ok _fflush && rm -f _fflush
+15,16d14
+< 1st
+< 2nd
+make[1]: [fflush] Fout 1 (genegeerd)
+g:\mingw\3.3.1\bin\..\lib\gcc-lib\mingw32\3.3.1\..\..\..\..\mingw32\bin\ld.exe: cannot open output file xx.exe: Permission denied
+make[1]: [getlnhd] Fout 1 (genegeerd)
+/bin/sh: ./xx: No such file or directory
+make[1]: [getlnhd] Fout 127 (genegeerd)
+diff -a  ../../awka-0.7.5-src/test/getlnhd.ok _getlnhd && rm -f _getlnhd
+1,2d0
+< select * from user
+<   where Name = 'O\'Donell'
+make[1]: [getlnhd] Fout 1 (genegeerd)
+g:\mingw\3.3.1\bin\..\lib\gcc-lib\mingw32\3.3.1\..\..\..\..\mingw32\bin\ld.exe: cannot open output file xx.exe: Permission denied
+make[1]: [pipeio1] Fout 1 (genegeerd)
+/bin/sh: ./xx: No such file or directory
+make[1]: [pipeio1] Fout 127 (genegeerd)
+diff -a  ../../awka-0.7.5-src/test/pipeio1.ok _pipeio1 && rm -f _pipeio1
+1,2d0
+< 1 2
+<  2
+make[1]: [pipeio1] Fout 1 (genegeerd)
+g:\mingw\3.3.1\bin\..\lib\gcc-lib\mingw32\3.3.1\..\..\..\..\mingw32\bin\ld.exe: cannot open output file xx.exe: Permission denied
+make[1]: [pipeio2] Fout 1 (genegeerd)
+/bin/sh: ./xx: No such file or directory
+make[1]: [pipeio2] Fout 127 (genegeerd)
+diff -a  ../../awka-0.7.5-src/test/pipeio2.ok _pipeio2 && rm -f _pipeio2
+1,16d0
+< 'echo    January 1997 | tr [0-9]. ...........'
+< January ....
+< 'echo  S  M Tu  W Th  F  S | tr [0-9]. ...........'
+< S M Tu W Th F S
+< 'echo           1  2  3  4 | tr [0-9]. ...........'
+< . . . .
+< 'echo  5  6  7  8  9 10 11 | tr [0-9]. ...........'
+< . . . . . .. ..
+< 'echo 12 13 14 15 16 17 18 | tr [0-9]. ...........'
+< .. .. .. .. .. .. ..
+< 'echo 19 20 21 22 23 24 25 | tr [0-9]. ...........'
+< .. .. .. .. .. .. ..
+< 'echo 26 27 28 29 30 31 | tr [0-9]. ...........'
+< .. .. .. .. .. ..
+< 'echo  | tr [0-9]. ...........'
+< 
+make[1]: [pipeio2] Fout 1 (genegeerd)
+g:\mingw\3.3.1\bin\..\lib\gcc-lib\mingw32\3.3.1\..\..\..\..\mingw32\bin\ld.exe: cannot open output file xx.exe: Permission denied
+make[1]: [strftlng] Fout 1 (genegeerd)
+/bin/sh: ./xx: No such file or directory
+make[1]: [strftlng] Fout 127 (genegeerd)
+1,58d0
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+/bin/sh: ./xx: No such file or directory
+make[1]: [strftlng] Fout 127 (genegeerd)
+diff -a  ../../awka-0.7.5-src/test/strftlng.ok _strftlng && rm -f _strftlng
+1,58d0
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+< 01/01/70 00:00:00
+make[1]: [strftlng] Fout 1 (genegeerd)
+g:\mingw\3.3.1\bin\..\lib\gcc-lib\mingw32\3.3.1\..\..\..\..\mingw32\bin\ld.exe: cannot open output file xx.exe: Permission denied
+make[1]: [posix] Fout 1 (genegeerd)
+/bin/sh: ./xx: No such file or directory
+make[1]: [posix] Fout 127 (genegeerd)
+diff -a  ../../awka-0.7.5-src/test/posix.ok _posix && rm -f _posix
+1,16d0
+< Test #1: "+2" compares as a string
+< Test #2: "+2a" compares as a string
+< Test #3: "+2 " compares as a string
+< Test #4: " 2" compares as a string
+< after addition
+< Test #5: "+2" compares as a string
+< Test #6: "+2a" compares as a string
+< Test #7: "+2 " compares as a string
+< Test #8: " 2" compares as a string
+< Test #9: "3e5" <= "5"
+< Test #10: test
+< Test #11: test
+< Test #12: 1.500000 1.500000e+00
+< Test #13: nomatch
+< Test #14: 1:2,3
+< Test #15: 4
+make[1]: [posix] Fout 1 (genegeerd)
+g:\mingw\3.3.1\bin\..\lib\gcc-lib\mingw32\3.3.1\..\..\..\..\mingw32\bin\ld.exe: cannot open output file xx.exe: Permission denied
+make[1]: [posix2] Fout 1 (genegeerd)
+/bin/sh: ./xx: No such file or directory
+make[1]: [posix2] Fout 127 (genegeerd)
+diff -a  ../../awka-0.7.5-src/test/posix2.ok _posix2 && rm -f _posix2
+1,28d0
+< 1: OK
+< 2: OK
+< 3: OK
+< 4: OK
+< 5: OK
+< 6: OK
+< 7: OK
+< 8: OK
+< 9: OK
+< 10: OK
+< 11: OK
+< 12: OK
+< 13: OK
+< 14: OK
+< 15: OK
+< 16: OK
+< 17: OK
+< 18: OK
+< 19: OK
+< 20: OK
+< 21: OK
+< 22: OK
+< 23: OK
+< 24: OK
+< 25: OK
+< 26: OK
+< 27: OK
+< 28: OK
+make[1]: [posix2] Fout 1 (genegeerd)
+g:\mingw\3.3.1\bin\..\lib\gcc-lib\mingw32\3.3.1\..\..\..\..\mingw32\bin\ld.exe: cannot open output file xx.exe: Permission denied
+make[1]: [manyfiles] Fout 1 (genegeerd)
+/bin/sh: ./xx: No such file or directory
+make[1]: [manyfiles] Fout 127 (genegeerd)
+This number better be 1 ->wc: junk/*: No such file or directory
+0
+diff -a  ../../awka-0.7.5-src/test/nondec.ok _nondec && rm -f _nondec
+g:\mingw\3.3.1\bin\..\lib\gcc-lib\mingw32\3.3.1\..\..\..\..\mingw32\bin\ld.exe: cannot open output file xx.exe: Permission denied
+make[1]: [asort] Fout 1 (genegeerd)
+/bin/sh: ./xx: No such file or directory
+make[1]: [asort] Fout 127 (genegeerd)
+diff -a  ../../awka-0.7.5-src/test/asort.ok _asort && rm -f _asort
+1,88d0
+< 1: "Free
+< 2: "May
+< 3: "Utility
+< 4: .B
+< 5: .BI
+< 6: .I
+< 7: .IR
+< 8: .SH
+< 9: .TH
+< 10: .ds
+< 11: 1
+< 12: 1991"
+< 13: 28
+< 14: =
+< 15: AN
+< 16: Commands"
+< 17: Foundation"
+< 18: GAWK
+< 19: NAME
+< 20: PX
+< 21: SYNOPSIS
+< 22: Software
+< 23: UX
+< 24: [
+< 25: \-
+< 26: \-F\^
+< 27: \-W
+< 28: \-f
+< 29: \-v
+< 30: \s-1ANSI\s+1
+< 31: \s-1POSIX\s+1
+< 32: \s-1UNIX\s+1
+< 33: ]
+< 34: and
+< 35: fs
+< 36: gawk
+< 37: gawk-options
+< 38: language
+< 39: pattern
+< 40: processing
+< 41: program-file
+< 42: scanning
+< 43: val
+< 44: var
+< 1: "Free
+< 2: "May
+< 3: "Utility
+< 4: .B
+< 5: .BI
+< 6: .I
+< 7: .IR
+< 8: .SH
+< 9: .TH
+< 10: .ds
+< 11: 1
+< 12: 1991"
+< 13: 28
+< 14: =
+< 15: AN
+< 16: Commands"
+< 17: Foundation"
+< 18: GAWK
+< 19: NAME
+< 20: PX
+< 21: SYNOPSIS
+< 22: Software
+< 23: UX
+< 24: [
+< 25: \-
+< 26: \-F\^
+< 27: \-W
+< 28: \-f
+< 29: \-v
+< 30: \s-1ANSI\s+1
+< 31: \s-1POSIX\s+1
+< 32: \s-1UNIX\s+1
+< 33: ]
+< 34: and
+< 35: fs
+< 36: gawk
+< 37: gawk-options
+< 38: language
+< 39: pattern
+< 40: processing
+< 41: program-file
+< 42: scanning
+< 43: val
+< 44: var
+make[1]: [asort] Fout 1 (genegeerd)
+make[1]: Leaving directory `/cygdrive/j/Lang/awka/0.7.5/awka-0.7.5/test'

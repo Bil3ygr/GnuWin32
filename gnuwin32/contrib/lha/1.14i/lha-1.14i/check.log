@@ -1,0 +1,357 @@
+Making check in man
+make[1]: Entering directory `/cygdrive/j/Archivers/lha/1.14i-ac20050924/lha-1.14i-ac20050924/man'
+make[1]: Niets te doen voor `check'.
+make[1]: Leaving directory `/cygdrive/j/Archivers/lha/1.14i-ac20050924/lha-1.14i-ac20050924/man'
+Making check in olddoc
+make[1]: Entering directory `/cygdrive/j/Archivers/lha/1.14i-ac20050924/lha-1.14i-ac20050924/olddoc'
+make[1]: Niets te doen voor `check'.
+make[1]: Leaving directory `/cygdrive/j/Archivers/lha/1.14i-ac20050924/lha-1.14i-ac20050924/olddoc'
+Making check in src
+make[1]: Entering directory `/cygdrive/j/Archivers/lha/1.14i-ac20050924/lha-1.14i-ac20050924/src'
+make[1]: Niets te doen voor `check'.
+make[1]: Leaving directory `/cygdrive/j/Archivers/lha/1.14i-ac20050924/lha-1.14i-ac20050924/src'
+Making check in tests
+make[1]: Entering directory `/cygdrive/j/Archivers/lha/1.14i-ac20050924/lha-1.14i-ac20050924/tests'
+Makefile:287: let op: overschrijven commando's voor doel `lha-test'
+Makefile:157: let op: oude commando's voor doel `lha-test' worden genegeerd
+make  lha-test
+make[2]: Entering directory `/cygdrive/j/Archivers/lha/1.14i-ac20050924/lha-1.14i-ac20050924/tests'
+Makefile:287: let op: overschrijven commando's voor doel `lha-test'
+Makefile:157: let op: oude commando's voor doel `lha-test' worden genegeerd
+make[2]: `lha-test' is up to date.
+make[2]: Leaving directory `/cygdrive/j/Archivers/lha/1.14i-ac20050924/lha-1.14i-ac20050924/tests'
+make  check-local
+make[2]: Entering directory `/cygdrive/j/Archivers/lha/1.14i-ac20050924/lha-1.14i-ac20050924/tests'
+Makefile:287: let op: overschrijven commando's voor doel `lha-test'
+Makefile:157: let op: oude commando's voor doel `lha-test' worden genegeerd
+bash ./lha-test
+testing exec_lha
+LHa for UNIX version 1.14i-ac20050924 (i386-pc-mingw32)
+testing to create/list/extract lha archive.
+lha-test1 #1 ... ok
+lha-test1 #2 ... ok
+lha-test1 #3 ... ok
+lha-test1 #4 ... ok
+lha-test1 #5 ... ok
+lha-test1 #6 ... ok
+lha-test1 #7 ... ok
+lha-test1 #8 ... ok
+testing to lh0, lh1, lh5, lh6 and lh7 method archive.
+lha-test2 #1 ... ok
+lha-test2 #2 ... ok
+lha-test2 #3 ... ok
+lha-test2 #4 ... ok
+lha-test2 #5 ... ok
+lha-test2 #6 ... ok
+lha-test2 #7 ... ok
+lha-test2 #8 ... ok
+lha-test2 #9 ... ok
+lha-test2 #10 ... ok
+lha-test2 #11 ... ok
+lha-test2 #12 ... ok
+lha-test2 #13 ... ok
+lha-test2 #14 ... ok
+lha-test2 #15 ... ok
+lha-test2 #16 ... ok
+lha-test2 #17 ... ok
+lha-test2 #18 ... ok
+lha-test2 #19 ... ok
+lha-test2 #20 ... ok
+lha-test2 #21 ... ok
+lha-test2 #22 ... ok
+lha-test2 #23 ... ok
+lha-test2 #24 ... ok
+lha-test2 #25 ... ok
+lha-test2 #26 ... ok
+lha-test2 #27 ... ok
+lha-test2 #28 ... ok
+lha-test2 #29 ... ok
+lha-test2 #30 ... ok
+lha-test2 #31 ... ok
+lha-test2 #32 ... ok
+lha-test2 #33 ... ok
+lha-test2 #34 ... ok
+lha-test2 #35 ... ok
+lha-test2 #36 ... ok
+lha-test2 #37 ... ok
+lha-test2 #38 ... ok
+lha-test2 #39 ... ok
+testing to generic format archive.
+lha-test3 #1 ... ok
+lha-test3 #2 ... ok
+lha-test3 #3 ... ok
+lha-test3 #4 ... ok
+lha-test3 #5 ... ok
+lha-test3 #6 ... ok
+lha-test3 #7 ... ok
+lha-test3 #8 ... ok
+lha-test3 #9 ... ok
+lha-test3 #10 ... ok
+lha-test3 #11 ... ok
+lha-test3 #12 ... ok
+lha-test3 #13 ... ok
+lha-test3 #14 ... ok
+lha-test3 #15 ... ok
+lha-test3 #16 ... ok
+lha-test3 #17 ... ok
+lha-test3 #18 ... ok
+lha-test3 #19 ... ok
+lha-test3 #20 ... ok
+lha-test3 #21 ... ok
+lha-test3 #22 ... ok
+lha-test3 #23 ... ok
+lha-test3 #24 ... ok
+lha-test3 #25 ... ok
+lha-test3 #26 ... ok
+lha-test3 #27 ... ok
+lha-test3 #28 ... ok
+lha-test3 #29 ... ok
+lha-test3 #30 ... ok
+lha-test3 #31 ... ok
+testing to delete files from archive.
+lha-test4 #1 ... ok
+lha-test4 #2 ... ok
+lha-test4 #3 ... ok
+lha-test4 #4 ... ok
+LHa: Fatal error: Cannot open archive file "test-tmp.lzh": No such file or directory
+lha-test4 #5 ... failed at line 19
+lha-test4 #6 ... ok
+lha-test4 #7 ... failed at line 23
+lha-test4 #8 ... ok
+LHa: Fatal error: Cannot open archive file "test-tmp.lzh": No such file or directory
+lha-test4 #9 ... failed at line 30
+lha-test4 #10 ... ok
+lha-test4 #11 ... failed at line 34
+lha-test4 #12 ... ok
+lha-test4 #13 ... ok
+testing to treat stdin/stdout as archive file.
+lha-test5 #1 ... ok
+lha-test5 #2 ... ok
+lha-test5 #3 ... ok
+lha-test5 #4 ... ok
+lha-test5 #5 ... ok
+lha-test5 #6 ... ok
+lha-test5 #7 ... ok
+lha-test5 #8 ... ok
+lha-test5 #9 ... ok
+testing to add/update files to archive.
+lha-test7 #1 ... ok
+lha-test7 #2 ... ok
+lha-test7 #3 ... ok
+lha-test7 #4 ... ok
+lha-test7 #5 ... ok
+lha-test7 #6 ... ok
+lha-test7 #7 ... ok
+lha-test7 #8 ... ok
+lha-test7 #9 ... ok
+lha-test7 #10 ... ok
+lha-test7 #11 ... ok
+lha-test7 #12 ... ok
+lha-test7 #13 ... ok
+lha-test7 #14 ... ok
+lha-test7 #15 ... ok
+lha-test7 #16 ... ok
+testing timestamp
+lha-test8 #1 ... ok
+lha-test8 #2 ... ok
+lha-test8 #3 ... ok
+lha-test8 #4 ... ok
+lha-test8 #5 ... ok
+lha-test8 #6 ... ok
+lha-test8 #7 ... ok
+lha-test8 #8 ... ok
+lha-test8 #9 ... ok
+lha-test8 #10 ... ok
+lha-test8 #11 ... ok
+lha-test8 #12 ... ok
+lha-test8 #13 ... ok
+lha-test8 #14 ... ok
+lha-test8 #15 ... ok
+lha-test8 #16 ... ok
+lha-test8 #17 ... ok
+lha-test8 #18 ... ok
+lha-test8 #19 ... ok
+lha-test8 #20 ... ok
+lha-test8 #21 ... ok
+testing header level 0, 1, 2 and each generic headers
+lha-test10 #1 ... ok
+lha-test10 #2 ... ok
+lha-test10 #3 ... ok
+lha-test10 #4 ... ok
+lha-test10 #5 ... ok
+lha-test10 #6 ... ok
+lha-test10 #7 ... ok
+lha-test10 #8 ... ok
+lha-test10 #9 ... ok
+lha-test10 #10 ... ok
+lha-test10 #11 ... ok
+lha-test10 #12 ... ok
+lha-test10 #13 ... ok
+lha-test10 #14 ... ok
+lha-test10 #15 ... ok
+lha-test10 #16 ... ok
+lha-test10 #17 ... ok
+lha-test10 #18 ... ok
+lha-test10 #19 ... ok
+lha-test10 #20 ... ok
+lha-test10 #21 ... ok
+lha-test10 #22 ... ok
+lha-test10 #23 ... ok
+lha-test10 #24 ... ok
+lha-test10 #25 ... ok
+lha-test10 #26 ... ok
+lha-test10 #27 ... ok
+lha-test10 #28 ... ok
+lha-test10 #29 ... ok
+lha-test10 #30 ... ok
+lha-test10 #31 ... ok
+lha-test10 #32 ... ok
+lha-test10 #33 ... ok
+lha-test10 #34 ... ok
+lha-test10 #35 ... ok
+lha-test10 #36 ... ok
+lha-test10 #37 ... ok
+lha-test10 #38 ... ok
+lha-test10 #39 ... ok
+lha-test10 #40 ... ok
+lha-test10 #41 ... ok
+lha-test10 #42 ... ok
+lha-test10 #43 ... ok
+lha-test10 #44 ... ok
+lha-test10 #45 ... ok
+lha-test10 #46 ... ok
+lha-test10 #47 ... ok
+lha-test10 #48 ... ok
+lha-test10 #49 ... ok
+lha-test10 #50 ... ok
+lha-test10 #51 ... ok
+lha-test10 #52 ... ok
+lha-test10 #53 ... ok
+lha-test10 #54 ... ok
+lha-test10 #55 ... ok
+lha-test10 #56 ... ok
+lha-test10 #57 ... ok
+lha-test10 #58 ... ok
+lha-test10 #59 ... ok
+lha-test10 #60 ... ok
+lha-test10 #61 ... ok
+lha-test10 #62 ... ok
+lha-test10 #63 ... ok
+lha-test10 #64 ... ok
+lha-test10 #65 ... ok
+lha-test10 #66 ... ok
+lha-test10 #67 ... ok
+lha-test10 #68 ... ok
+lha-test10 #69 ... ok
+lha-test10 #70 ... ok
+lha-test10 #71 ... ok
+lha-test10 #72 ... ok
+lha-test10 #73 ... ok
+lha-test10 #74 ... ok
+testing the long filename support
+touch: kan touch `1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890' niet uitvoeren: File name too long
+lha-test11 #1 ... failed at line 21
+lha-test11 #2 ... ok
+lha-test11 #3 ... ok
+lha-test11 #4 ... ok
+lha-test11 #5 ... ok
+lha-test11 #6 ... ok
+lha-test11 #7 ... ok
+lha-test11 #8 ... ok
+lha-test11 #9 ... ok
+lha-test11 #10 ... ok
+lha-test11 #11 ... ok
+lha-test11 #12 ... ok
+lha-test11 #13 ... ok
+lha-test11 #14 ... ok
+lha-test11 #15 ... ok
+lha-test11 #16 ... failed at line 62
+lha-test11 #17 ... ok
+lha-test11 #18 ... ok
+lha-test11 #19 ... ok
+lha-test11 #20 ... failed at line 70
+lha-test11 #21 ... failed at line 72
+lha-test11 #22 ... failed at line 74
+lha-test11 #23 ... failed at line 76
+touch: kan touch `test-tmp9012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890' niet uitvoeren: File name too long
+lha-test11 #24 ... failed at line 80
+LHa: Warning: Cannot access "test-tmp9012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890" : No such file or directory; ignored.
+lha-test11 #25 ... ok
+LHa: Error: Cannot open archive "test-tmp4-h2.lzh"
+lha-test11 #26 ... failed at line 84
+LHa: Error: Cannot open archive "test-tmp4-h2.lzh"
+lha-test11 #27 ... failed at line 86
+LHa: Fatal error: Cannot open archive file "test-tmp4-h2.lzh": No such file or directory
+lha-test11 #28 ... failed at line 88
+LHa: Error: Cannot open archive "test-tmp4-h2.lzh"
+lha-test11 #29 ... failed at line 90
+lha-test11 #30 ... failed at line 92
+testing the end of line conversion.
+lha-test12 #1 ... ok
+lha-test12 #2 ... ok
+lha-test12 #3 ... ok
+lha-test12 #4 ... ok
+lha-test12 #5 ... ok
+lha-test12 #6 ... ok
+lha-test12 #7 ... ok
+lha-test12 #8 ... ok
+lha-test12 #9 ... ok
+lha-test12 #10 ... ok
+lha-test12 #11 ... ok
+testing the kanji code conversion.
+lha-test13 #1 ... ok
+lha-test13 #2 ... ok
+lha-test13 #3 ... ok
+lha-test13 #4 ... ok
+lha-test13 #5 ... ok
+lha-test13 #6 ... ok
+lha-test13 #7 ... ok
+lha-test13 #8 ... ok
+lha-test13 #9 ... ok
+lha-test13 #10 ... ok
+lha-test13 #11 ... ok
+lha-test13 #12 ... ok
+lha-test13 #13 ... ok
+lha-test13 #14 ... ok
+lha-test13 #15 ... ok
+lha-test13 #16 ... ok
+lha-test13 #17 ... ok
+lha-test13 #18 ... ok
+lha-test13 #19 ... ok
+lha-test13 #20 ... ok
+lha-test13 #21 ... ok
+lha-test13 #22 ... ok
+lha-test13 #23 ... ok
+lha-test13 #24 ... ok
+lha-test13 #25 ... ok
+lha-test13 #26 ... ok
+lha-test13 #27 ... ok
+lha-test13 #28 ... ok
+testing to handle symbolic links ... skip
+testing to self extracting archive
+lha-test15 #1 ... ok
+lha-test15 #2 ... ok
+lha-test15 #3 ... ok
+lha-test15 #4 ... ok
+lha-test15 #5 ... ok
+lha-test15 #6 ... ok
+lha-test15 #7 ... ok
+lha-test15 #8 ... ok
+lha-test15 #9 ... ok
+lha-test15 #10 ... ok
+lha-test15 #11 ... ok
+lha-test15 #12 ... ok
+lha-test15 #13 ... ok
+lha-test15 #14 ... ok
+lha-test15 #15 ... ok
+lha-test15 #16 ... ok
+lha-test15 #17 ... ok
+lha-test15 #18 ... ok
+16 tests failed!
+test number: lha-test4 #5 lha-test4 #7 lha-test4 #9 lha-test4 #11 lha-test11 #1 lha-test11 #16 lha-test11 #20 lha-test11 #21 lha-test11 #22 lha-test11 #23 lha-test11 #24 lha-test11 #26 lha-test11 #27 lha-test11 #28 lha-test11 #29 lha-test11 #30
+make[2]: [check-local] Fout 1 (genegeerd)
+make[2]: Leaving directory `/cygdrive/j/Archivers/lha/1.14i-ac20050924/lha-1.14i-ac20050924/tests'
+make[1]: Leaving directory `/cygdrive/j/Archivers/lha/1.14i-ac20050924/lha-1.14i-ac20050924/tests'
+make[1]: Entering directory `/cygdrive/j/Archivers/lha/1.14i-ac20050924/lha-1.14i-ac20050924'
+make[1]: Niets te doen voor `check-am'.
+make[1]: Leaving directory `/cygdrive/j/Archivers/lha/1.14i-ac20050924/lha-1.14i-ac20050924'

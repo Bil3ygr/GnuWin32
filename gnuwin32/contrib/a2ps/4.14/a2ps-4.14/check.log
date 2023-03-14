@@ -1,0 +1,424 @@
+Making check in auxdir
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/auxdir' wordt binnengegaan
+make[1]: Er is niets te doen voor 'check'.
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/auxdir' wordt verlaten
+Making check in m4
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/m4' wordt binnengegaan
+make[1]: Er is niets te doen voor 'check'.
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/m4' wordt verlaten
+Making check in etc
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/etc' wordt binnengegaan
+make[1]: Er is niets te doen voor 'check'.
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/etc' wordt verlaten
+Making check in ps
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/ps' wordt binnengegaan
+make[1]: Er is niets te doen voor 'check'.
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/ps' wordt verlaten
+Making check in ogonkify
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/ogonkify' wordt binnengegaan
+Making check in doc
+make[2]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/ogonkify/doc' wordt binnengegaan
+make[2]: Er is niets te doen voor 'check'.
+make[2]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/ogonkify/doc' wordt verlaten
+Making check in m4
+make[2]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/ogonkify/m4' wordt binnengegaan
+make[2]: Er is niets te doen voor 'check'.
+make[2]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/ogonkify/m4' wordt verlaten
+make[2]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/ogonkify' wordt binnengegaan
+make[2]: Er is niets te doen voor 'check-am'.
+make[2]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/ogonkify' wordt verlaten
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/ogonkify' wordt verlaten
+Making check in lib
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/lib' wordt binnengegaan
+make  check-am
+make[2]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/lib' wordt binnengegaan
+make[2]: Er is niets te doen voor 'check-am'.
+make[2]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/lib' wordt verlaten
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/lib' wordt verlaten
+Making check in src
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/src' wordt binnengegaan
+make  check-am
+make[2]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/src' wordt binnengegaan
+make[2]: Er is niets te doen voor 'check-am'.
+make[2]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/src' wordt verlaten
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/src' wordt verlaten
+Making check in po
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/po' wordt binnengegaan
+make[1]: Er is niets te doen voor 'check'.
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/po' wordt verlaten
+Making check in tests
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/tests' wordt binnengegaan
+top_srcdir=`cygpath -ms ../../a2ps-4.14-src`;	\
+	top_builddir=`cygpath -ms ..`;	\
+	sed -e "s#@libpath@#$top_builddir/etc;$top_srcdir/ogonkify;$top_builddir/ogonkify;$top_srcdir/sheets;$top_srcdir/ps;$top_srcdir/encoding;$top_srcdir/afm;$top_builddir/afm;$top_srcdir/fonts;$top_srcdir/ppd;/usr/local/ghostscript/fonts:/usr/local/share/ghostscript/fonts#g;s#@file_link@#/usr/bin/file -L#g" \
+	../../a2ps-4.14-src/tests/a2ps-tst.cfg.in > a2ps-tst.cfg
+make  check-TESTS
+make[2]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/tests' wordt binnengegaan
+testing: --file-align=virtual
+testing: --file-align=rank
+testing: --file-align=page
+testing: --file-align=sheet
+testing: --file-align=3
+PASS: align-1.tst
+New file, -o, backup=simple
+New file, -P, backup=simple
+j:\Print\a2ps\4.14\a2ps-4.14\src\a2ps.exe: cannot rename file `NUL' as `NUL~': Invalid argument
+FAIL: backup.tst
+Running card --version
+card 1.3 (GNU a2ps 4.14)
+Written by Akim Demaille.
+
+Copyright (c) 1997-99 Akim Demaille, Miguel Santana
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Running card --help
+Usage: card [OPTION]... PROGRAM...
+Print a reference card of the PROGRAMs thanks to their inline help.
+
+Options:
+ -h, --help           display this help and exit
+ -v, --version        display version information and exit
+ -o, --output=FILE    save the output in FILE
+ -l, --language=LL    print the help in the language LL (default: English)
+     --command=CMD    perform pretty-printing on the output of CMD
+                      (e.g. --command='netscape -help')
+
+Options for a2ps are given after `--', for instance
+
+    $ card -lfr a2ps -- -Pdisplay -4
+
+News, updates and documentation: http://www.inf.enst.fr/~demaille/a2ps/
+Report bugs to <bug-a2ps@gnu.org>.
+Running fixps --version
+fixps 1.5 (GNU a2ps 4.14)
+Written by Akim Demaille.
+
+Copyright (c) 1998-2000 Akim Demaille, Miguel Santana
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Running fixps --help
+Usage: fixps [OPTIONS] FILE
+Try to fix common PostScript problems that break postprocessing.
+
+Options:
+ -h, --help              display this help and exit
+ -v, --version           display version information and exit
+ -q, --quiet             don't print informational messages
+ -o, --output=FILE       save result in FILE.  If FILE is `-', send to stdout
+ -f, --force             force full rewrite by ghostscript
+ -n, --no-fix            don't fix the FILE, but still honor `-o'
+ -c, --check, --dry-run  don't perform any action
+
+Fixes:
+ - Remove junk before and after PostScript content
+ - Use only Unix end of lines (\n)
+ - Remove empty lines
+ - Fix Apple prologue (fixmacps)
+ - Fix FrameMaker prologue (fixfmps)
+ - Fix CorelDraw prologue (fixnt)
+ - Fix Windows NT 3.5/4.0 prologue (fixnt)
+ - Fix Windows 95 prologue
+ - Ensure there is a `%%BeginSetup/%%EndSetup' section
+ - Removes Canvas' extraneaous `%%EndDocument:' comments
+ - Split too long lines
+
+If the FILE seems really in a bad state, ghostscript may be used to perform
+a full rewrite.  The output might then be significantly bigger, but much
+safer.
+
+Report bugs to <bug-a2ps@gnu.org>
+Running pdiff --version
+pdiff 0.4 (GNU a2ps 4.14)
+Written by Akim Demaille.
+
+Copyright (c) 1997-1999 Akim Demaille, Miguel Santana
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Running pdiff --help
+Usage: pdiff FILE1 FILE2 [-- A2PS-OPTIONS...]
+Pretty print the differences between FILE1 and FILE2.
+
+Options:
+ -h, --help           display this help and exit
+ -v, --version        display version information and exit
+ -q, --quiet          don't print informational messages
+ -l, --lines          search for line differences (`diff')
+ -w, --words          search for word differences (`wdiff')
+ -o, --output=FILE    save the output in FILE
+
+Options for a2ps are given after `--', for instance
+
+    $ pdiff COPYING COPYING.LIB -- -Pdisplay
+
+News, updates and documentation: http://www.inf.enst.fr/~demaille/a2ps/.
+Report bugs to <bug-a2ps@gnu.org>.
+Running psmandup --version
+psmandup 2.1 (GNU a2ps 4.14)
+Written by Akim Demaille.
+
+Copyright (c) 1998-1999 Akim Demaille, Miguel Santana
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Running psmandup --help
+Usage: psmandup FILE
+Tries to produce a version of the PostScript FILE to print in manual
+Duplex.
+
+Options:
+ -h, --help           display this help and exit
+ -v, --version        display version information and exit
+ -q, --quiet          don't print informational messages
+ -o, --output=FILE    save result in FILE.  If FILE is `-', send to stdout
+ -n, --no-fix         don't call fixps to fix PS problems in FILE
+ -f, --front          output only the front pages (recto) on the regular
+                      tray
+ -b, --back           output only the back pages (verso) on the manual
+                      feed tray
+
+Produced output is meant for PS level 2 printers which don't support
+Duplex printing, but support Manual Feed.  Once the first set of pages
+is printed (odd pages), manual feed is asked: introduce the odd pages
+to print the even pages on the other side.
+
+Because there is usually a short time out for manually fed jobs, you
+should really be next to the printer.  If ever the time out expired,
+use the option -b to send only the missing part.
+
+Environment variables FIXPS, PSSELECT and PSSET, if defined, are used
+to find the tools.
+
+News, updates and documentation: http://www.inf.enst.fr/~demaille/a2ps/
+Report bugs to <bug-a2ps@gnu.org>
+Running psset --version
+psset 1.3 (GNU a2ps 4.14)
+Written by Akim Demaille.
+
+Copyright (c) 1998-1999 Akim Demaille, Miguel Santana
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Running psset --help
+Usage: psset FILE
+
+Produce a version of the PostScript FILE with a protected call to the
+PostScript operator `setpagedevice'.  Typical use is making FILE
+print duplex, or on the manual tray etc.
+
+Options:
+ -h, --help           display this help and exit
+ -v, --version        display version information and exit
+ -q, --quiet          don't print informational messages
+ -o, --output=FILE    save result in FILE.  If FILE is `-', send to stdout
+ -n, --no-fix         don't run `fixps' to fix PS problems in FILE
+ -S, --setpagedevice=KEY[:VALUE]  pass a page device definition to output.
+                      Multiple values accumulate
+ -a, --at=PAGE        insert the page device definitions at PAGE.  Default
+                      is PAGE=0, standing for the Document's Setup section
+
+Shortcuts:
+ -m, --manualfeed     alias for -SManualFeed:true
+ -s, --simplex        alias for -SDuplex:false
+ -d, --duplex         alias for -SDuplex:true -STumble:false
+                      corresponds to Duplex, binding along the long edge
+ -t, --tumble         alias for -SDuplex:true -STumble:true
+                      corresponds to Duplex, binding along the short edge
+
+Produced output is meant for PS level 2 printers.
+
+News, updates and documentation: visit http://www.inf.enst.fr/~demaille/a2ps/
+Report bugs to <bug-a2ps@gnu.org>
+PASS: contrib.tst
+PASS: cut.tst
+PASS: deleg-1.tst
+PASS: deleg-2.tst
+PASS: encoding.tst
+Your /etc/magic file seems a bit junky.
+It is unable to recognize the type of ps files
+You might run into bad guesses with automatic pretty-printing
+-- Please note that this is not an error from a2ps.
+-- Don't be worried by this failure, nor should you report it
+PASS: guess-1.tst
+*****************************************************************
+* Your file(1) is sadly broken.  It does not recognize PostScript
+* files.  You may have unexpected results such as pretty printing
+* of the _source_ of your PostScript documents.
+* To avoid this problem ask your system administrator to update
+* etc/magic, so that running
+*    file j:/Print/a2ps/4.14/A2PS-4~2.14-/tests/tstfiles/ehandler
+* correctly answers `PostScript document'
+*****************************************************************
+PASS: guess-2.tst
+PASS: inline.tst
+PASS: inout-1.tst
+PASS: inout-2.tst
+PASS: inout-3.tst
+Running a2ps --version
+Running a2ps --help
+Running a2ps --list=features
+Running a2ps --list=printers
+Running a2ps --list=options
+Running a2ps --list=media
+Running a2ps --list=style-sheets
+Running a2ps --list=delegations
+Running a2ps --list=macro-meta-sequences
+Running a2ps --list=encodings
+Running a2ps --list=user-options
+Running a2ps --list=prologues
+Running a2ps --list=ppd
+PASS: options-1.tst
+PASS: pages-1.tst
+PASS: pages-2.tst
+PASS: po.tst
+FAIL: printers.tst
+Running prologue bold
+Running prologue bw
+Running prologue color
+Running prologue gray
+Running prologue gray2
+Running prologue matrix
+Running prologue diff
+PASS: prolog-1.tst
+Running a2ps -1 -Eplain -Pawkin j:/Print/a2ps/4.14/A2PS-4~2.14-/tests/tstfiles/formfeed.txt
+Running a2ps -4 -Eplain -Pawkin j:/Print/a2ps/4.14/A2PS-4~2.14-/tests/tstfiles/formfeed.txt
+PASS: prolog-2.tst
+PASS: strip.tst
+-------------------------------------
+   Comparing generated PostScript
+-------------------------------------
+AppDelegate.m     (objc)...       Ok
+InsertBlock.java  (java)...       Bad: -ng -> 4, -g -> 4
+a2ps.man          (plain)...      Ok
+bookie.idl        (cidl)...       Bad: -ng -> 4, -g -> 4
+configure.in      (autoconf)...   Ok
+confirm.m3        (modula3)...    Ok
+ehandler          (ps)...         Ok
+eplv_chkr.v       (verilog)...    Ok
+essai2.o2c        (o2c)...        Ok
+ex1.asn1          (asn1)...       Ok
+ex_PSGETRS.f90    (fortran)...    Ok
+ShellNewDummyHook.(pascal)...     Ok
+formfeed.txt      (plain)...      Ok
+ftp2.pml          (promela)...    Ok
+includeres        (perl)...       Ok
+mofibida.hs       (haskell)...    Ok
+mtvplot.octave    (octave)...     Ok
+mutex.py          (python)...     Ok
+pi.b              (bc)...         Ok
+polkaIDL.hh       (cxx)...        Ok
+prosamp.pre       (pre)...        Ok
+psmandup          (sh)...         Ok
+report.pre        (texscript)...  Ok
+run-help          (zsh)...        Ok
+s-garnam.adb      (ada)...        Ok
+snacc.mib         (mib)...        Ok
+space.pls         (plsql)...      Ok
+sqlcrtbl.sql      (sql)...        Ok
+sqlinit.ora       (oracle)...     Ok
+sqlpq92.sql       (sql92)...      Ok
+sqlspace.pkb      (plsql)...      Ok
+strange.mail      (mail)...       Ok
+symbol.pre        (pre)...        Bad: -ng -> 486, -g -> 522
+synopsys.setup    (dc_shell)...   Ok
+tabulation.pre    (pre)...        Ok
+template.e        (eiffel)...     Ok
+typing.cl         (claire)...     Ok
+vrcaml.ml         (caml)...       Ok
+wide.txt          (plain)...      Bad: -ng -> 92, -g -> 92
+  There are differences with reference PostScript files:
+    4 InsertBlock.java
+    4 bookie.idl
+   92 wide.txt
+  486 symbol.pre
+  586 total
+  There are differences with reference PostScript files (with -g):
+    4 InsertBlock.java
+    4 bookie.idl
+   92 wide.txt
+  522 symbol.pre
+  622 total
+FAIL: styles.tst
+j:/Print/a2ps/4.14/A2PS-4~2.14-/tests/ps-ref/toc.ps j:/Print/a2ps/4.14/a2ps-4.14/tests/ps-chk/toc.ps differ: char 6220, line 201
+FAIL: toc.tst
+PASS: usropt-1.tst
+PASS: usropt-2.tst
+=================================
+4 of 25 tests failed
+Please report to bug-a2ps@gnu.org
+=================================
+make[2]: [check-TESTS] Fout 1 (genegeerd)
+make[2]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/tests' wordt verlaten
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/tests' wordt verlaten
+Making check in sheets
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/sheets' wordt binnengegaan
+rm -f check.t check.t1 check.t2
+for i in ada.ssh c.ssh card.ssh clisp.ssh cpp.ssh cxx.ssh eiffel.ssh elisp.ssh for-fixed.ssh for-free.ssh for77-fixed.ssh for77-free.ssh for77kwds.ssh for90-fixed.ssh for90-free.ssh for90kwds.ssh fortran.ssh gnuc.ssh java.ssh mail.ssh make.ssh objc.ssh ocaml.ssh pascal.ssh perl.ssh pre.ssh pretex.ssh scheme.ssh sh.ssh shell.ssh ssh.ssh symbols.ssh tcl.ssh texscript.ssh tk.ssh udiff.ssh wdiff.ssh 68000.ssh a2psrc.ssh asn1.ssh autoconf.ssh awk.ssh b.ssh bc.ssh caml.ssh chlog.ssh cidl.ssh claire.ssh coqv.ssh csh.ssh csharp.ssh dc_shell.ssh eps.ssh gmake.ssh haskell.ssh html.ssh idl.ssh initora.ssh is5rul.ssh js.ssh lace.ssh lex.ssh lout.ssh maple.ssh matlab.ssh matlab4.ssh mib.ssh mly.ssh modula2.ssh modula3.ssh nasm.ssh o2c.ssh oberon.ssh octave.ssh oracle.ssh pic16f84.ssh plsql.ssh pov.ssh ppd.ssh ps.ssh prolog.ssh promela.ssh python.ssh rexx.ssh sather.ssh sdl88.ssh sed.ssh	small.ssh sml.ssh specc.ssh sql.ssh sql92.ssh stratego.ssh tclx.ssh tcsh.ssh tex.ssh texinfo.ssh tiger.ssh unity.ssh vba.ssh verilog.ssh vhdl.ssh vrml.ssh vtcl.ssh yacc.ssh xs.ssh zsh.ssh php.ssh rd.ssh s.ssh st.ssh ruby.ssh; do \
+	  echo $i >> check.t; \
+	done
+sort check.t | uniq > check.t1
+rm -f check.t
+for i in `cd ../../a2ps-4.14-src/sheets && echo *.ssh`; do \
+	  echo $i >> check.t; \
+	done
+sort check.t | uniq > check.t2
+if cmp check.t1 check.t2 >/dev/null; then :; else \
+	  echo "There are differences between available style sheets"; \
+	  echo "and distributed style sheets."; \
+	  diff check.t1 check.t2; \
+	fi
+rm -f check.t check.t1 check.t2
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/sheets' wordt verlaten
+Making check in encoding
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/encoding' wordt binnengegaan
+make[1]: Er is niets te doen voor 'check'.
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/encoding' wordt verlaten
+Making check in afm
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/afm' wordt binnengegaan
+. ../tests/defs ;\
+	touch fonts.map ; \
+	if /bin/sh ../../a2ps-4.14-src/afm/make_fonts_map.sh > /dev/null; then \
+	  mv fonts.map.new fonts.map ;\
+	else \
+	  echo "Failed to build a fonts.map file."; \
+	  echo "Reverting to default file."; \
+	  cp ../../a2ps-4.14-src/afm/fontsmap fonts.map; \
+	fi
+Looking for the afm files read by j:/Print/a2ps/4.14/a2ps-4.14//src/a2ps...
+  /usr/local/ghostscript/fonts:/usr/local/share/ghostscript/fonts...
+Extracting font names...
+Sorting entries...
+sort: open failed: fonts.map.new: No such file or directory
+Failed to build a fonts.map file.
+Reverting to default file.
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/afm' wordt verlaten
+Making check in fonts
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/fonts' wordt binnengegaan
+make[1]: Er is niets te doen voor 'check'.
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/fonts' wordt verlaten
+Making check in ppd
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/ppd' wordt binnengegaan
+make[1]: Er is niets te doen voor 'check'.
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/ppd' wordt verlaten
+Making check in contrib
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/contrib' wordt binnengegaan
+Making check in sample
+make[2]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/contrib/sample' wordt binnengegaan
+make[2]: Er is niets te doen voor 'check'.
+make[2]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/contrib/sample' wordt verlaten
+Making check in emacs
+make[2]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/contrib/emacs' wordt binnengegaan
+make[2]: Er is niets te doen voor 'check'.
+make[2]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/contrib/emacs' wordt verlaten
+make[2]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/contrib' wordt binnengegaan
+make[2]: Er is niets te doen voor 'check-am'.
+make[2]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/contrib' wordt verlaten
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/contrib' wordt verlaten
+Making check in doc
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/doc' wordt binnengegaan
+make[1]: Er is niets te doen voor 'check'.
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/doc' wordt verlaten
+Making check in man
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/man' wordt binnengegaan
+make[1]: Er is niets te doen voor 'check'.
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14/man' wordt verlaten
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14' wordt binnengegaan
+make[1]: Er is niets te doen voor 'check-am'.
+make[1]: Map '/cygdrive/j/Print/a2ps/4.14/a2ps-4.14' wordt verlaten

@@ -1,0 +1,7 @@
+building test scripts for ed...
+testing ed...
+*** The script bang1.ed exited abnormally ***
+*** Output e2.o of script e2.ed is incorrect ***
+*** Output r1.o of script r1.ed is incorrect ***
+*** The script w.ed exited abnormally ***
+make: [check] Fout 127 (genegeerd)

@@ -1,0 +1,42 @@
+Making check in include
+make[1]: Map '/cygdrive/j/Math/glpk/4.34/glpk-4.34/include' wordt binnengegaan
+make[1]: Er is niets te doen voor 'check'.
+make[1]: Map '/cygdrive/j/Math/glpk/4.34/glpk-4.34/include' wordt verlaten
+Making check in src
+make[1]: Map '/cygdrive/j/Math/glpk/4.34/glpk-4.34/src' wordt binnengegaan
+make[1]: Er is niets te doen voor 'check'.
+make[1]: Map '/cygdrive/j/Math/glpk/4.34/glpk-4.34/src' wordt verlaten
+Making check in examples
+make[1]: Map '/cygdrive/j/Math/glpk/4.34/glpk-4.34/examples' wordt binnengegaan
+PATH=.libs:../src/.libs:$PATH && glpsol.exe --version
+GLPSOL: GLPK LP/MIP Solver 4.34
+
+Copyright (C) 2008 Andrew Makhorin, Department for Applied Informatics,
+Moscow Aviation Institute, Moscow, Russia. All rights reserved.
+
+This program has ABSOLUTELY NO WARRANTY.
+
+This program is free software; you may re-distribute it under the terms
+of the GNU General Public License version 3 or later.
+PATH=.libs:../src/.libs:$PATH && glpsol.exe --mps ../../glpk-4.34-src/examples/plan.mps
+glp_read_mps: reading problem data from `../../glpk-4.34-src/examples/plan.mps'...
+glp_read_mps: problem PLAN
+glp_read_mps: 8 rows, 7 columns, 48 non-zeros
+glp_read_mps: 54 cards were read
+glp_simplex: original LP has 8 rows, 7 columns, 48 non-zeros
+glp_simplex: presolved LP has 7 rows, 7 columns, 41 non-zeros
+Scaling...
+ A: min|aij| = 1.000e-002  max|aij| = 1.000e+000  ratio = 1.000e+002
+GM: min|aij| = 2.534e-001  max|aij| = 3.946e+000  ratio = 1.557e+001
+EQ: min|aij| = 6.422e-002  max|aij| = 1.000e+000  ratio = 1.557e+001
+Crashing...
+Size of triangular part = 7
+      0: obj =  6.500000000e+002  infeas = 3.788e+003 (0)
+*     2: obj =  4.376770833e+002  infeas = 0.000e+000 (0)
+*    10: obj =  2.962166065e+002  infeas = 0.000e+000 (0)
+OPTIMAL SOLUTION FOUND
+Time used:   0.0 secs
+Memory used: 0.1 Mb (53848 bytes)
+make[1]: Map '/cygdrive/j/Math/glpk/4.34/glpk-4.34/examples' wordt verlaten
+make[1]: Map '/cygdrive/j/Math/glpk/4.34/glpk-4.34' wordt binnengegaan
+make[1]: Map '/cygdrive/j/Math/glpk/4.34/glpk-4.34' wordt verlaten
