@@ -1,5 +1,9 @@
 # GnuWin32
 
+本项目的GnuWin32是可直接使用的状态，只需将**gnuwin32**目录复制到目标目录即可；或重新执行一次**install.bat**
+
+下面介绍如何从0开始完整安装
+
 1. 下载[**GetGnuWin32**](https://sourceforge.net/projects/getgnuwin32/)
 2. 打开，解压到文件夹**GetGnuWin32**
 3. 下载最新的[**wget**](https://eternallybored.org/misc/wget/)
@@ -8,4 +12,4 @@
 6. 再次进入**GetGnuWin32\bin**，把**wget.exe**替换成最新的（保持文件名为**wget.exe**）
 7. 返回**GetGnuWin32**目录，命令行执行`download.bat -d [mirror] [mirror] [mirror]`
    > 这一步可以把mirror换成指定镜像，支持多个镜像，具体选项可以打开**download.bat**文件查看
-8. 下载完毕后执行**install target_dir**，把**target_dir**改成想要安装的目录
+8. 下载完毕后执行**install.bat [target_dir]**，把**target_dir**改成想要安装的目录
